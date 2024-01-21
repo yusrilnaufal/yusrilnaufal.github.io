@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.545">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Yusril Naufal Irfani">
+<meta name="dcterms.date" content="2024-01-21">
+
+<title>Analisis Pengaruh Indeks Pendidikan Terhadap Hasil Persentase Suara Sah Pemilihan Presiden 2014</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Analisis Pengaruh Indeks Pendidikan Terhadap Hasil Persentase Suara Sah Pemilihan Presiden 2014</h1>
+<p class="subtitle lead">Metode Penelitian Politeknik APP Jakarta</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Yusril Naufal Irfani </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 21, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="poltekapp.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+<section id="pendahuluan" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="pendahuluan"><span class="header-section-number">1</span> Pendahuluan</h2>
+<section id="latar-belakang" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="latar-belakang"><span class="header-section-number">1.1</span> Latar belakang</h3>
+<p>Indonesia selalu mengadakan kontestasi pemilihan presiden setiap lima tahun sekali guna menentukan pasangan presiden dan wakil presiden yang akan memimpin indonesia selama satu masa jabatan berikutnya. Banyak cara kampanye yang dilakukan masing masing kubu, terutama pada dengan ranah pendidikan, seperti “orang cerdas pilih (nama capres)”, “orang pintar pilih (nama capres)” dan sebagainya.</p>
+<p>Pendidikan memiliki peran penting dalam pembentukan masyarakat yang berpengetahuan dan berperan aktif dalam proses demokrasi, termasuk pemilihan presiden. Indeks pendidikan, yang mencakup tingkat melek huruf, akses ke pendidikan, dan kualitas pendidikan, dapat mempengaruhi bagaimana individu memahami dan mengevaluasi isu politik, serta bagaimana mereka memilih pemimpin mereka.</p>
+<p>Pada tahun 2014, Indonesia mengadakan pemilihan presiden yang menarik perhatian dunia. Dalam pemilihan tersebut, dua calon kuat bersaing untuk posisi tertinggi di negara ini. Namun, apa pengaruh indeks pendidikan terhadap hasil pemilihan tersebut? Apakah ada korelasi antara tingkat pendidikan suatu wilayah dengan persentase suara yang diperoleh oleh masing-masing calon?</p>
+<p>Untuk menjawab pertanyaan ini, penelitian ini bertujuan untuk menganalisis pengaruh indeks pendidikan terhadap hasil pemilihan presiden Indonesia tahun 2014 menggunakan metode uji regresi.</p>
+</section>
+<section id="ruang-lingkup" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="ruang-lingkup"><span class="header-section-number">1.2</span> Ruang lingkup</h3>
+<p>Penulis mengambil objek penelitian yang akan digunakan sebagai variabel penelitian dari Data Badan Pusat Statistik dan Data Komisi Pemilihan Umum Republik Indonesia. Penelitian ini berfokus pada analisis pengaruh indeks pendidikan terhadap hasil pemilihan presiden Indonesia tahun 2014. Ruang lingkup penelitian ini mencakup data persentase suara sah hasil pemilihan pilpres di seluruh provinsi dalam pemilihan presiden tahun 2014.Variabel yang penulis gunakan adalah Hasil persentase pilpres 2014 tiap calon dan indeks pendidikan tiap provinsi tahun 2014. Variabel dependen dalam penelitian ini adalah persentase suara yang diperoleh oleh masing-masing calon presiden. Variabel independen adalah indeks pendidikan.</p>
+</section>
+<section id="rumusan-masalah" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="rumusan-masalah"><span class="header-section-number">1.3</span> Rumusan masalah</h3>
+<p>Berdasarkan penjelasan tersebut maka pokok masalah penelitian ini adalah:</p>
+<ol type="1">
+<li>Apakah ada pengaruh signifikan antara indeks pendidikan terhadap hasil pemilihan presiden Indonesia tahun 2014?</li>
+<li>Bagaimana hubungan antara indeks pendidikan dengan hasil pemilihan presiden Indonesia tahun 2014?</li>
+</ol>
+</section>
+<section id="tujuan-dan-manfaat-penelitian" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="tujuan-dan-manfaat-penelitian"><span class="header-section-number">1.4</span> Tujuan dan manfaat penelitian</h3>
+<p>Berdasarkan latar belakang dan rumusan masalah diatas, maka tujuan dari penelitian ini adalah untuk mengetahui apakah ada pengaruh signifikan antara indeks pendidikan terhadap hasil pemilihan presiden Indonesia tahun 2014.</p>
+<p>Adapun manfaat penelitian ini adalah:</p>
+<ul>
+<li><p>Manfaat Teoritis: Hasil penelitian ini dapat menjadi kontribusi dalam literatur ilmu politik dan pendidikan, khususnya dalam konteks pemilihan presiden dan pengaruh indeks pendidikan.</p></li>
+<li><p>Manfaat Praktis:</p>
+<ul>
+<li>Bagi penulis: Penulis harap penelitian ini dapat menjadi referensi bagi orang yang ingin mengetahui tentang pengaruh pendidikan terhadap politik.</li>
+<li>Bagi pemerintah: Hasil penelitian ini dapat digunakan sebagai bahan pertimbangan dalam merumuskan kebijakan pendidikan dan kebijakan politik.</li>
+<li>Bagi partai politik dan calon presiden: Hasil penelitian ini dapat digunakan sebagai bahan evaluasi dan strategi dalam merumuskan kampanye politik di masa mendatang.</li>
+<li>Bagi masyarakat umum: Hasil penelitian ini dapat meningkatkan pemahaman masyarakat tentang pentingnya pendidikan dalam proses demokrasi.</li>
+</ul></li>
+</ul>
+</section>
+<section id="package" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="package"><span class="header-section-number">1.5</span> Package</h3>
+<p>Packages yang digunakan antara lain sebagai berikut:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'tidyverse'</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'readxl'</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'ggplot2'</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'dplyr'</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'broom'</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'ggpubr'</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'car'</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'carData'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>── Attaching core tidyverse packages ────────────────────────────────────── tidyverse 2.0.0 ── ✔ dplyr 1.1.4 ✔ readr 2.1.4 ✔ forcats 1.0.0 ✔ stringr 1.5.0 ✔ ggplot2 3.4.4 ✔ tibble 3.2.1 ✔ lubridate 1.9.2 ✔ tidyr 1.3.0 ✔ purrr 1.0.2</p>
+</section>
+</section>
+<section id="studi-pustaka" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="studi-pustaka"><span class="header-section-number">2</span> Studi pustaka</h2>
+<ol type="1">
+<li>Pemilihan Presiden dan Demokrasi di Indonesia</li>
+</ol>
+<p>Pemilihan Presiden dan Wakil Presiden merupakan perwujudan demokrasi dalam sistem presidensiil. Pemilihan presiden merupakan bagian integral dari sistem demokrasi di Indonesia. Sejak reformasi pada tahun 1998, Indonesia telah mengadakan beberapa pemilihan presiden yang dianggap bebas dan adil. Pemilihan presiden memberikan kesempatan kepada warga negara untuk memilih pemimpin mereka dan berpartisipasi dalam proses demokrasi (sumono, 2014). Berdasarkan Pasal 22 E Undang-Undang Dasar Negara Republik Indonesia 1945 diperkenalkan Pemilu Legislatif, Pemilu Presiden dan Wakil Presiden, sedang Pasal 18 (4) Undang-Undang Dasar Negara Republik Indonesia 1945 mengatur Pemilu Kepala Daerah dan Wakil Kepala Daerah secara bertingkat dari Gubernur hingga Bupati/Walikota.</p>
+<ol start="2" type="1">
+<li>Indeks Pendidikan</li>
+</ol>
+<p>Indeks pendidikan merupakan salah satu komponen pengukur pendidikan. Indeks pendidikan adalah cerminan dari hasil pembangunan dibidang pendidikan yang mempunyai kedudukan strategis, mengingat kualitas Sumber Daya Manusia (SDM) yang tercermin didalamnya sangat menentukan tingkat produktivitas suatu negara. Indeks pendidikan digunakan untuk mengukur dimensi pengetahuan sebagai salah satu variabel pembangunan manusia. Indeks pendidikan ini merupakan penggabungan dua indikator pendidikan yaitu angka harapan lama sekolah dan rata-rata lama sekolah (BPS, 2021).</p>
+<ol start="3" type="1">
+<li>Pengaruh Pendidikan terhadap Partisipasi Politik</li>
+</ol>
+<p>Beberapa penelitian telah menunjukkan bahwa pendidikan memiliki pengaruh signifikan terhadap partisipasi politik. Individu yang memiliki tingkat pendidikan yang lebih tinggi cenderung lebih berpartisipasi dalam proses politik, termasuk pemilihan presiden. Tingkat pendidikan seseorang akan mempengaruhi banyak hal dalam kehidupan, salah satunya termasuk dalam kegiatan partisipasi politik. Dengan semakin tingginya tingkat pendidikan mahasiswa akan dapat mengembangkan pola pikir dalam menentukan sikap dan pilihannya khususnya dalam kehidupan politik. Jika pemilih memiliki tingkat pendidikan yang tinggi maka sudah seharusnya dalam hal memilih akan sesuai dengan pilihannya, tanpa ada paksaan dan tekanan dari pihak manapun. Pendidikan dalam membangun kehidupan politik yang ideal akan sangat strategis jika dimulai dari kalangan ademisi (Arifin, 2018).</p>
+</section>
+<section id="metode-penelitian" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="metode-penelitian"><span class="header-section-number">3</span> Metode penelitian</h2>
+<section id="data" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="data"><span class="header-section-number">3.1</span> Data</h3>
+<p>Berikut adalah data yang saya gunakan dalam penelitian ini, data berikut merupakan data persentase perolehan suara sah pilpres 2014 tiap calon dan indeks pendidikan tahun 2014.</p>
+<table class="table-bordered table">
+<caption>Hasil Perolehan Suara Sah Pilpres 2014 (dalam persen)</caption>
+<colgroup>
+<col style="width: 26%">
+<col style="width: 32%">
+<col style="width: 30%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Provinsi</th>
+<th style="text-align: center;">Paslon 01 (Prabowo-Hatta)</th>
+<th style="text-align: center;">Paslon 02 (Jokowi-JK)</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ACEH</td>
+<td style="text-align: center;">54,39</td>
+<td style="text-align: center;">45,61</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SUMATERA UTARA</td>
+<td style="text-align: center;">44,76</td>
+<td style="text-align: center;">55,24</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SUMATERA BARAT</td>
+<td style="text-align: center;">76,92</td>
+<td style="text-align: center;">23,08</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RIAU</td>
+<td style="text-align: center;">50,12</td>
+<td style="text-align: center;">49,88</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">JAMBI</td>
+<td style="text-align: center;">49,25</td>
+<td style="text-align: center;">50,75</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SUMATERA SELATAN</td>
+<td style="text-align: center;">51,26</td>
+<td style="text-align: center;">48,74</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BENGKULU</td>
+<td style="text-align: center;">45,27</td>
+<td style="text-align: center;">54,73</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LAMPUNG</td>
+<td style="text-align: center;">46,93</td>
+<td style="text-align: center;">53,07</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">KEP. BANGKA BELITUNG</td>
+<td style="text-align: center;">32,74</td>
+<td style="text-align: center;">67,26</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">KEPULAUAN RIAU</td>
+<td style="text-align: center;">40,37</td>
+<td style="text-align: center;">59,63</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">DKI JAKARTA</td>
+<td style="text-align: center;">46,92</td>
+<td style="text-align: center;">53,08</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">JAWA BARAT</td>
+<td style="text-align: center;">59,78</td>
+<td style="text-align: center;">40,22</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">JAWA TENGAH</td>
+<td style="text-align: center;">33,35</td>
+<td style="text-align: center;">66,65</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">D I YOGYAKARTA</td>
+<td style="text-align: center;">44,19</td>
+<td style="text-align: center;">55,81</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">JAWA TIMUR</td>
+<td style="text-align: center;">46,83</td>
+<td style="text-align: center;">53,17</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BANTEN</td>
+<td style="text-align: center;">57,1</td>
+<td style="text-align: center;">42,9</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BALI</td>
+<td style="text-align: center;">28,58</td>
+<td style="text-align: center;">71,42</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NUSA TENGGARA BARAT</td>
+<td style="text-align: center;">72,45</td>
+<td style="text-align: center;">27,55</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NUSA TENGGARA TIMUR</td>
+<td style="text-align: center;">34,08</td>
+<td style="text-align: center;">65,92</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">KALIMANTAN BARAT</td>
+<td style="text-align: center;">39,62</td>
+<td style="text-align: center;">60,38</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">KALIMANTAN TENGAH</td>
+<td style="text-align: center;">40,21</td>
+<td style="text-align: center;">59,79</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">KALIMANTAN SELATAN</td>
+<td style="text-align: center;">50,05</td>
+<td style="text-align: center;">49,95</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">KALIMANTAN TIMUR</td>
+<td style="text-align: center;">36,62</td>
+<td style="text-align: center;">63,38</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SULAWESI UTARA</td>
+<td style="text-align: center;">46,12</td>
+<td style="text-align: center;">53,88</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SULAWESI TENGAH</td>
+<td style="text-align: center;">45,17</td>
+<td style="text-align: center;">54,83</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SULAWESI SELATAN</td>
+<td style="text-align: center;">28,57</td>
+<td style="text-align: center;">71,43</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SULAWESI TENGGARA</td>
+<td style="text-align: center;">45,1</td>
+<td style="text-align: center;">54,9</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GORONTALO</td>
+<td style="text-align: center;">63,1</td>
+<td style="text-align: center;">36,9</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SULAWESI BARAT</td>
+<td style="text-align: center;">26,63</td>
+<td style="text-align: center;">73,37</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MALUKU</td>
+<td style="text-align: center;">49,48</td>
+<td style="text-align: center;">50,52</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MALUKU UTARA</td>
+<td style="text-align: center;">54,45</td>
+<td style="text-align: center;">45,55</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">PAPUA BARAT</td>
+<td style="text-align: center;">27,51</td>
+<td style="text-align: center;">72,49</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">PAPUA</td>
+<td style="text-align: center;">32,37</td>
+<td style="text-align: center;">67,63</td>
+<td style="text-align: center;">100</td>
+</tr>
+</tbody>
+</table>
+<table class="table-bordered table">
+<caption>Indeks Pendidikan tiap Provinsi tahun 2014</caption>
+<colgroup>
+<col style="width: 60%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Provinsi</th>
+<th style="text-align: center;">Indeks Pendidikan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ACEH</td>
+<td style="text-align: center;">66,6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SUMATERA UTARA</td>
+<td style="text-align: center;">64,78</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SUMATERA BARAT</td>
+<td style="text-align: center;">65,08</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RIAU</td>
+<td style="text-align: center;">62,82</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">JAMBI</td>
+<td style="text-align: center;">60,77</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SUMATERA SELATAN</td>
+<td style="text-align: center;">58,16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BENGKULU</td>
+<td style="text-align: center;">63,75</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LAMPUNG</td>
+<td style="text-align: center;">58,93</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">KEP. BANGKA BELITUNG</td>
+<td style="text-align: center;">55,54</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">KEPULAUAN RIAU</td>
+<td style="text-align: center;">66,89</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">DKI JAKARTA</td>
+<td style="text-align: center;">69,52</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">JAWA BARAT</td>
+<td style="text-align: center;">59,26</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">JAWA TENGAH</td>
+<td style="text-align: center;">56,88</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">D I YOGYAKARTA</td>
+<td style="text-align: center;">70,7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">JAWA TIMUR</td>
+<td style="text-align: center;">58,09</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BANTEN</td>
+<td style="text-align: center;">61,48</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BALI</td>
+<td style="text-align: center;">62,16</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NUSA TENGGARA BARAT</td>
+<td style="text-align: center;">57,6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NUSA TENGGARA TIMUR</td>
+<td style="text-align: center;">57,98</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">KALIMANTAN BARAT</td>
+<td style="text-align: center;">55,78</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">KALIMANTAN TENGAH</td>
+<td style="text-align: center;">59,23</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">KALIMANTAN SELATAN</td>
+<td style="text-align: center;">58,55</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">KALIMANTAN TIMUR</td>
+<td style="text-align: center;">66,7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SULAWESI UTARA</td>
+<td style="text-align: center;">63,33</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SULAWESI TENGAH</td>
+<td style="text-align: center;">61,63</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SULAWESI SELATAN</td>
+<td style="text-align: center;">60,79</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SULAWESI TENGGARA</td>
+<td style="text-align: center;">62,24</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GORONTALO</td>
+<td style="text-align: center;">57,92</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SULAWESI BARAT</td>
+<td style="text-align: center;">55,63</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MALUKU</td>
+<td style="text-align: center;">68,1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MALUKU UTARA</td>
+<td style="text-align: center;">63,12</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">PAPUA BARAT</td>
+<td style="text-align: center;">56,17</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">PAPUA</td>
+<td style="text-align: center;">46,82</td>
+</tr>
+</tbody>
+</table>
+<p>Sumber data: Komisi Pemilihan Umum Republik Indonesia dan Badan Pusat Statistik Indonesia <img src="kpu.png" class="img-fluid quarto-figure quarto-figure-left" style="width:40.0%" alt="Logo KPU."> <img src="bps.png" class="img-fluid quarto-figure quarto-figure-right" style="width:40.0%" alt="Logo BPS."></p>
+</section>
+<section id="import-data" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="import-data"><span class="header-section-number">3.2</span> Import Data</h3>
+<p>Penelitian ini menggunakan data Persentase Hasil Perolehan Suara Sah Pilpres 2014 sebagai Variabel dependen dan Data Indeks Pendidikan sebagai Variabel Independen.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Baca Data</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'readxl'</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">"C:/Users/yusri/Documents/UAS Metopel/data uas.xlsx"</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 5
+  Provinsi           Edu PrbwHt JkwJk Total
+  &lt;chr&gt;            &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1 ACEH              66.6   54.4  45.6   100
+2 SUMATERA UTARA    64.8   44.8  55.2   100
+3 SUMATERA BARAT    65.1   76.9  23.1   100
+4 RIAU              62.8   50.1  49.9   100
+5 JAMBI             60.8   49.2  50.8   100
+6 SUMATERA SELATAN  58.2   51.3  48.7   100</code></pre>
+</div>
+</div>
+</section>
+<section id="plot-dengan-ggplot" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="plot-dengan-ggplot"><span class="header-section-number">3.3</span> Plot dengan ggplot</h3>
+<section id="paslon-01-prabowo-hatta" class="level4" data-number="3.3.1">
+<h4 data-number="3.3.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta"><span class="header-section-number">3.3.1</span> Paslon 01 (Prabowo-Hatta)</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>dat, <span class="fu">aes</span>(<span class="at">x =</span> Edu, <span class="at">y =</span> PrbwHt)) <span class="sc">+</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">"orange"</span>,<span class="at">size=</span><span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Indeks Pendidikan"</span>, <span class="at">y =</span> <span class="st">"Persentase Suara Prabowo-Hatta"</span>, </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Hubungan antara Indeks Pendidikan dan Persentase Suara Pilpres 2014 (Prabowo-Hatta)"</span>) <span class="sc">+</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-mpg" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mpg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="index_files/figure-html/fig-mpg-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mpg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Hubungan antara Indeks Pendidikan dan Persentase Suara Pasangan 01
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="paslon-02-jokowi-jusuf-kalla" class="level4" data-number="3.3.2">
+<h4 data-number="3.3.2" class="anchored" data-anchor-id="paslon-02-jokowi-jusuf-kalla"><span class="header-section-number">3.3.2</span> Paslon 02 (Jokowi-Jusuf Kalla)</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>dat, <span class="fu">aes</span>(<span class="at">x =</span> Edu, <span class="at">y =</span> JkwJk)) <span class="sc">+</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">"red"</span>,<span class="at">size=</span><span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Indeks Pendidikan"</span>, <span class="at">y =</span> <span class="st">"Persentase Suara Jokowi-JK"</span>, </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Hubungan antara Indeks Pendidikan dan Persentase Suara Pilpres 2014 (Jokowi-JK)"</span>) <span class="sc">+</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-mpg2" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mpg2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="index_files/figure-html/fig-mpg2-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mpg2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Hubungan antara Indeks Pendidikan dan Persentase Suara Pasangan 02
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="plot-error" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="plot-error"><span class="header-section-number">3.4</span> Plot error</h3>
+<section id="paslon-01-prabowo-hatta-1" class="level4" data-number="3.4.1">
+<h4 data-number="3.4.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta-1"><span class="header-section-number">3.4.1</span> Paslon 01 (Prabowo-Hatta)</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Rplot%20error%2001.png" class="img-fluid figure-img"></p>
+<figcaption>Plot Error Prabowo-Hatta</figcaption>
+</figure>
+</div>
+</section>
+<section id="paslon-02-jokowi-jusuf-kalla-1" class="level4" data-number="3.4.2">
+<h4 data-number="3.4.2" class="anchored" data-anchor-id="paslon-02-jokowi-jusuf-kalla-1"><span class="header-section-number">3.4.2</span> Paslon 02 (Jokowi-Jusuf Kalla)</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Rplot%20error%2002.png" class="img-fluid figure-img"></p>
+<figcaption>Plot Error Jokowi-Jusuf Kalla</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="metode-analisis" class="level3" data-number="3.5">
+<h3 data-number="3.5" class="anchored" data-anchor-id="metode-analisis"><span class="header-section-number">3.5</span> Metode analisis</h3>
+<p>Metode yang dipilih adalah regresi univariat atau Ordinary Least Square (OLS) dengan 1 variabel independen. Penelitian ini bertujuan untuk mencari pengaruh Indeks Pendidikan terhadap Persentase suara sah tiap Calon Presiden. Spesifikasi yang dilakukan adalah:</p>
+<p><span class="math display">\[
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+\]</span> di mana <span class="math inline">\(y_t\)</span> adalah Persentase Suara Calon Presiden dan <span class="math inline">\(x_t\)</span> adalah Indeks Pendidikan.</p>
+</section>
+</section>
+<section id="pembahasan" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="pembahasan"><span class="header-section-number">4</span> Pembahasan</h2>
+<section id="pembahasan-masalah" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="pembahasan-masalah"><span class="header-section-number">4.1</span> Pembahasan masalah</h3>
+<p>Untuk menemukan hubungan antara Indeks Pendidikan dan Persentase Suara Sah Calon Presiden, saya menggunakan OLS dengan menggunakan dua model regresi untuk tiap calon presiden. Sehingga didapat hasil seperti tabel berikut:</p>
+</section>
+<section id="metode-pertama" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="metode-pertama"><span class="header-section-number">4.2</span> Metode Pertama</h3>
+<section id="paslon-01-prabowo-hatta-2" class="level4" data-number="4.2.1">
+<h4 data-number="4.2.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta-2"><span class="header-section-number">4.2.1</span> Paslon 01 (Prabowo-Hatta)</h4>
+<table class="table-bordered table">
+<caption>Regresi Paslon 01 (Prabowo-Hatta)</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Variable</th>
+<th style="text-align: center;">Coefficient</th>
+<th style="text-align: center;">Std. error</th>
+<th style="text-align: center;">t-value</th>
+<th style="text-align: center;">Prob(.)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Intercept</td>
+<td style="text-align: center;">56.11338</td>
+<td style="text-align: center;">3.28567</td>
+<td style="text-align: center;">17.078</td>
+<td style="text-align: center;">&lt;2e-16</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">X</td>
+<td style="text-align: center;">0.10748</td>
+<td style="text-align: center;">0.06992</td>
+<td style="text-align: center;">1.537</td>
+<td style="text-align: center;">0.134</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">R Squared</td>
+<td style="text-align: center;">0.07084</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Adjusted R Squared</td>
+<td style="text-align: center;">0.04086</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F Statistic</td>
+<td style="text-align: center;">2.363</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Prob (F-Statistic)</td>
+<td style="text-align: center;">0.1344</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Hasil Regresi tersebut dimasukkan ke dalam rumus persamaan sehingga: <span class="math display">\[
+y_{t}=56.11338 + 0.10748 X + \mu_t
+\]</span> Dari persamaan tersebut, kita bisa menyimpulkan bahwa Indeks Pendidikan sangat berpengaruh terhadap Persentase suara Prabowo-Hatta. Hal ini dapat dinilai dari variabel x nya yang positif. Dari persamaan tersebut kita juga dapat menyimpulkan bahwa Tiap indeks pendidikan naik 1 poin, Maka Persentase Perolehan suara Prabowo-Hatta akan naik 0.10748.</p>
+</section>
+<section id="paslon-02-jokowi-jusuf-kalla-2" class="level4" data-number="4.2.2">
+<h4 data-number="4.2.2" class="anchored" data-anchor-id="paslon-02-jokowi-jusuf-kalla-2"><span class="header-section-number">4.2.2</span> Paslon 02 (Jokowi-Jusuf Kalla)</h4>
+<table class="table-bordered table">
+<caption>Regresi Paslon 02 (Jokowi-Jusuf Kalla)</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Variable</th>
+<th style="text-align: center;">Coefficient</th>
+<th style="text-align: center;">Std. error</th>
+<th style="text-align: center;">t-value</th>
+<th style="text-align: center;">Prob(.)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Intercept</td>
+<td style="text-align: center;">66.86186</td>
+<td style="text-align: center;">3.90270</td>
+<td style="text-align: center;">17.132</td>
+<td style="text-align: center;">&lt;2e-16</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">X</td>
+<td style="text-align: center;">-0.10748</td>
+<td style="text-align: center;">0.06992</td>
+<td style="text-align: center;">-1.537</td>
+<td style="text-align: center;">0.134</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">R Squared</td>
+<td style="text-align: center;">0.07084</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Adjusted R Squared</td>
+<td style="text-align: center;">0.04086</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F Statistic</td>
+<td style="text-align: center;">2.363</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Prob (F-Statistic)</td>
+<td style="text-align: center;">0.1344</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Hasil Regresi tersebut dimasukkan ke dalam rumus persamaan sehingga: <span class="math display">\[
+y_{t}= 66.86186 + (-0.10748 X) + \mu_t
+\]</span> Dari persamaan tersebut, kita bisa menyimpulkan bahwa Indeks Pendidikan juga sangat berpengaruh terhadap Persentase suara Jokowi-Jusuf Kalla. Dari persamaan tersebut kita dapat menyimpulkan bahwa Tiap indeks pendidikan naik 1 poin, Maka Persentase Perolehan suara Jokowi-Jusuf Kalla akan turun sebesar 0.10748.</p>
+</section>
+</section>
+<section id="metode-kedua-package-car" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="metode-kedua-package-car"><span class="header-section-number">4.3</span> Metode Kedua ‘package (car)’</h3>
+<section id="paslon-01-prabowo-hatta-3" class="level4" data-number="4.3.1">
+<h4 data-number="4.3.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta-3"><span class="header-section-number">4.3.1</span> Paslon 01 (Prabowo-Hatta)</h4>
+<table class="table-bordered table">
+<caption>Regresi Paslon 01 (Prabowo-Hatta)</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Variable</th>
+<th style="text-align: center;">Coefficient</th>
+<th style="text-align: center;">Std. error</th>
+<th style="text-align: center;">t-value</th>
+<th style="text-align: center;">Prob(.)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Intercept</td>
+<td style="text-align: center;">5.2626</td>
+<td style="text-align: center;">26.2311</td>
+<td style="text-align: center;">0.201</td>
+<td style="text-align: center;">0.842</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">X</td>
+<td style="text-align: center;">0.6590</td>
+<td style="text-align: center;">0.4287</td>
+<td style="text-align: center;">1.537</td>
+<td style="text-align: center;">0.134</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">R Squared</td>
+<td style="text-align: center;">0.07084</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Adjusted R Squared</td>
+<td style="text-align: center;">0.04086</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F Statistic</td>
+<td style="text-align: center;">2.363</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Prob (F-Statistic)</td>
+<td style="text-align: center;">0.1344</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Hasil Regresi tersebut dimasukkan ke dalam rumus persamaan sehingga: <span class="math display">\[
+y_{t}= 5.2626 + 0.6590 X + \mu_t
+\]</span> Dari persamaan yang dihasilkan dengan metode kedua, kita bisa menyimpulkan bahwa Indeks Pendidikan sangat berpengaruh terhadap Persentase suara Prabowo-Hatta. Hal ini dapat dinilai lagi dari variabel x nya yang positif. Dari persamaan tersebut kita juga dapat menyimpulkan bahwa Tiap indeks pendidikan naik 1 poin, Maka Persentase Perolehan suara Prabowo-Hatta akan naik 0.6590.</p>
+</section>
+<section id="paslon-02-jokowi-jusuf-kalla-3" class="level4" data-number="4.3.2">
+<h4 data-number="4.3.2" class="anchored" data-anchor-id="paslon-02-jokowi-jusuf-kalla-3"><span class="header-section-number">4.3.2</span> Paslon 02 (Jokowi-Jusuf Kalla)</h4>
+<table class="table-bordered table">
+<caption>Regresi Paslon 02 (Jokowi-Jusuf Kalla)</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Variable</th>
+<th style="text-align: center;">Coefficient</th>
+<th style="text-align: center;">Std. error</th>
+<th style="text-align: center;">t-value</th>
+<th style="text-align: center;">Prob(.)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Intercept</td>
+<td style="text-align: center;">94.7374</td>
+<td style="text-align: center;">26.2311</td>
+<td style="text-align: center;">3.612</td>
+<td style="text-align: center;">0.00106</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">X</td>
+<td style="text-align: center;">-0.6590</td>
+<td style="text-align: center;">0.4287</td>
+<td style="text-align: center;">-1.537</td>
+<td style="text-align: center;">0.13436</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">R Squared</td>
+<td style="text-align: center;">0.07084</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Adjusted R Squared</td>
+<td style="text-align: center;">0.04086</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">F Statistic</td>
+<td style="text-align: center;">2.363</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Prob (F-Statistic)</td>
+<td style="text-align: center;">0.1344</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Hasil Regresi tersebut dimasukkan ke dalam rumus persamaan sehingga: <span class="math display">\[
+y_{t}= 94.7374 + (-0.6590 X) + \mu_t
+\]</span> Dari persamaan tersebut, kita bisa menyimpulkan bahwa Indeks Pendidikan juga sangat berpengaruh terhadap Persentase suara Jokowi-Jusuf Kalla. Dari persamaan tersebut kita dapat menyimpulkan bahwa Tiap indeks pendidikan naik 1 poin, Maka Persentase Perolehan suara Jokowi-Jusuf Kalla akan turun sebesar 0.6590.</p>
+</section>
+</section>
+<section id="analisis-masalah" class="level3" data-number="4.4">
+<h3 data-number="4.4" class="anchored" data-anchor-id="analisis-masalah"><span class="header-section-number">4.4</span> Analisis masalah</h3>
+<section id="regresi-model-pertama" class="level4" data-number="4.4.1">
+<h4 data-number="4.4.1" class="anchored" data-anchor-id="regresi-model-pertama"><span class="header-section-number">4.4.1</span> <em>Regresi Model Pertama</em></h4>
+<section id="paslon-01-prabowo-hatta-4" class="level5" data-number="4.4.1.1">
+<h5 data-number="4.4.1.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta-4"><span class="header-section-number">4.4.1.1</span> Paslon 01 (Prabowo-Hatta)</h5>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Pemodelan Regresi</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(Edu<span class="sc">~</span>PrbwHt,<span class="at">data=</span>dat)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Interpretasi Model</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = Edu ~ PrbwHt, data = dat)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-12.773  -3.057  -0.637   2.771   9.837 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 56.11338    3.28567  17.078   &lt;2e-16 ***
+PrbwHt       0.10748    0.06992   1.537    0.134    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 4.777 on 31 degrees of freedom
+Multiple R-squared:  0.07084,   Adjusted R-squared:  0.04086 
+F-statistic: 2.363 on 1 and 31 DF,  p-value: 0.1344</code></pre>
+</div>
+</div>
+</section>
+<section id="paslon-02-jokowi-jusuf-kalla-4" class="level5" data-number="4.4.1.2">
+<h5 data-number="4.4.1.2" class="anchored" data-anchor-id="paslon-02-jokowi-jusuf-kalla-4"><span class="header-section-number">4.4.1.2</span> Paslon 02 (Jokowi-Jusuf Kalla)</h5>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Pemodelan Regresi</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(Edu<span class="sc">~</span>JkwJk,<span class="at">data=</span>dat)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Interpretasi Model</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = Edu ~ JkwJk, data = dat)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-12.773  -3.057  -0.637   2.771   9.837 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 66.86186    3.90270  17.132   &lt;2e-16 ***
+JkwJk       -0.10748    0.06992  -1.537    0.134    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 4.777 on 31 degrees of freedom
+Multiple R-squared:  0.07084,   Adjusted R-squared:  0.04086 
+F-statistic: 2.363 on 1 and 31 DF,  p-value: 0.1344</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="regresi-model-kedua" class="level4" data-number="4.4.2">
+<h4 data-number="4.4.2" class="anchored" data-anchor-id="regresi-model-kedua"><span class="header-section-number">4.4.2</span> <em>Regresi Model Kedua</em></h4>
+<section id="paslon-01-prabowo-hatta-5" class="level5" data-number="4.4.2.1">
+<h5 data-number="4.4.2.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta-5"><span class="header-section-number">4.4.2.1</span> Paslon 01 (Prabowo-Hatta)</h5>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Regresi model 2</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'car'</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'carData'</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Pemodelan Regresi</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(PrbwHt <span class="sc">~</span> Edu, <span class="at">data =</span> dat)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Interpretasi Model</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = PrbwHt ~ Edu, data = dat)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-17.648  -8.975  -1.181   5.236  29.227 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)
+(Intercept)   5.2626    26.2311   0.201    0.842
+Edu           0.6590     0.4287   1.537    0.134
+
+Residual standard error: 11.83 on 31 degrees of freedom
+Multiple R-squared:  0.07084,   Adjusted R-squared:  0.04086 
+F-statistic: 2.363 on 1 and 31 DF,  p-value: 0.1344</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Visualisasi Data</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-7-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-7-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-7-4.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="paslon-02-jokowi-jusuf-kalla-5" class="level5" data-number="4.4.2.2">
+<h5 data-number="4.4.2.2" class="anchored" data-anchor-id="paslon-02-jokowi-jusuf-kalla-5"><span class="header-section-number">4.4.2.2</span> Paslon 02 (Jokowi-Jusuf Kalla)</h5>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'car'</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'carData'</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Pemodelan Regresi</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(JkwJk <span class="sc">~</span> Edu, <span class="at">data =</span> dat)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Interpretasi Model</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = JkwJk ~ Edu, data = dat)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-29.227  -5.236   1.181   8.975  17.648 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)   
+(Intercept)  94.7374    26.2311   3.612  0.00106 **
+Edu          -0.6590     0.4287  -1.537  0.13436   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 11.83 on 31 degrees of freedom
+Multiple R-squared:  0.07084,   Adjusted R-squared:  0.04086 
+F-statistic: 2.363 on 1 and 31 DF,  p-value: 0.1344</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Visualisasi Data</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-8-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-8-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-8-4.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+<section id="kesimpulan" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="kesimpulan"><span class="header-section-number">5</span> Kesimpulan</h2>
+<section id="paslon-01-prabowo-hatta-6" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta-6"><span class="header-section-number">5.1</span> Paslon 01 (Prabowo-Hatta)</h3>
+<ol type="1">
+<li><p>Dengan menggunakan metode pertama, Tiap indeks pendidikan naik 1 poin, Maka Persentase Perolehan suara Prabowo-Hatta akan naik 0.10748.</p></li>
+<li><p>Dengan menggunakan metode kedua, Tiap indeks pendidikan naik 1 poin, Maka Persentase Perolehan suara Prabowo-Hatta akan naik 0.6590.</p></li>
+</ol>
+</section>
+<section id="paslon-02-jokowi-jk" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="paslon-02-jokowi-jk"><span class="header-section-number">5.2</span> Paslon 02 (Jokowi-JK)</h3>
+<ol type="1">
+<li><p>Dengan menggunakan metode pertama, Tiap indeks pendidikan naik 1 poin, Maka Persentase Perolehan suara Jokowi-Jusuf Kalla akan turun sebesar 0.10748.</p></li>
+<li><p>Dengan menggunakan metode kedua, Tiap indeks pendidikan naik 1 poin, Maka Persentase Perolehan suara Jokowi-Jusuf Kalla akan turun sebesar 0.6590.</p></li>
+</ol>
+</section>
+<section id="kesimpulan-akhir" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="kesimpulan-akhir"><span class="header-section-number">5.3</span> Kesimpulan Akhir</h3>
+<p>Pasangan calon nomor urut 1 (Prabowo-Hatta) memang sangat diuntungkan dengan naiknya indeks pendidikan, hal ini dikarenakan nilai variabel X nya yang positif. Namun perlu dicatat, hal ini tidak lantas mengunggulkan pasangan calon nomor urut 01 (Prabowo-Hatta) atas Pasangan calon nomor urut 02 (Jokowi-Jusuf Kalla). Meskipun variabel x paslon 01 positif, nilai koefisien β0 paslon 01 (Prabowo-Hatta) selalu lebih kecil dari paslon 02 (Jokowi-Jusuf Kalla).</p>
+<p>Begitupula sebaliknya, meskipun nilai variabel X paslon 02 (Jokowi-Jusuf Kalla) negatif, nilai koefisien β0 paslon 02 selalu lebih besar dibandingkan nilai koefisien β0 paslon 01 (Prabowo-Hatta).</p>
+</section>
+</section>
+<section id="saran" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="saran"><span class="header-section-number">6</span> Saran</h2>
+<section id="rekomendasi" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="rekomendasi"><span class="header-section-number">6.1</span> Rekomendasi</h3>
+<ol type="1">
+<li><p>Strategi Kampanye: Pasangan calon nomor urut 1 (Prabowo-Hatta) mungkin perlu mempertimbangkan strategi kampanye yang lebih menargetkan pemilih dengan tingkat pendidikan yang lebih tinggi seperti D.I Yogyakarta, DKI Jakarta, Kepulauan Riau dan Aceh, mengingat hasil pemilihan mereka tampaknya lebih baik di antara kelompok ini. Sebaliknya, pasangan calon nomor urut 2 (Jokowi-Jusuf Kalla) mungkin perlu mempertimbangkan strategi kampanye yang lebih menargetkan pemilih dengan tingkat pendidikan yang lebih rendah seperti Papua, Kalimantan Barat, Sulawesi Barat, Jawa tengah dan Papua Barat.</p></li>
+<li><p>Hasil ini menunjukkan pentingnya pendidikan dalam pemilihan presiden. Oleh karena itu, kedua pasangan calon mungkin perlu mempertimbangkan bagaimana mereka bisa mendukung pendidikan publik dalam strategi kampanye mereka.</p></li>
+<li><p>Meskipun hasil analisis ini menarik, penting untuk diingat bahwa banyak faktor lain yang mempengaruhi hasil pemilihan presiden. Oleh karena itu, mungkin perlu dilakukan analisis lebih lanjut untuk memahami pengaruh faktor-faktor lain, seperti ekonomi, isu-isu sosial, dan lainnya.</p></li>
+</ol>
+</section>
+<section id="hambatan" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="hambatan"><span class="header-section-number">6.2</span> Hambatan</h3>
+<ol type="1">
+<li><p>Hasil penelitian ini hanya berlaku untuk tahun 2014 saja.</p></li>
+<li><p>Perlu dilakukan penelitian selanjutnya untuk mengetahui pengaruh indikator lain terhadap hasil pemilihan presiden.</p></li>
+<li><p>Perlu dilakukan penelitian selanjutnya untuk mengetahui pengaruh indikator pendidikan terhadap hasil pemilihan presiden di negara lain.</p></li>
+</ol>
+</section>
+</section>
+<section id="referensi" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="referensi"><span class="header-section-number">7</span> Referensi</h2>
+<p>Arifin(s). (2018) PENGARUH PENDIDIKAN POLITIK TERHADAP PARTISIPASI POLITIK MAHASISWA PRODI PPKn FKIP UNIVERSITAS MUHAMMADIYAH PONOROGO PADA PELAKSANAN PEMILIHAN UMUM KEPALA DAERAH PROVINSI JAWA TIMUR TAHUN 2018. Jurnal Edupedia, 2(2). DOI: 10.24269/ed.v2i2.144</p>
+<p>Badan Pusat Statistik, Persentase Perolehan Suara Sah Pemilu Presiden dan Wakil Presiden pada Putaran Pertama Menurut Provinsi dan Nama Pasangan Calon Presiden dan Wakil Presiden, 2009 dan 2014. (2019). Jakarta: Badan Pusat Statistik, accessed: 01-01-2024.</p>
+<p>Komisi Pemilihan Umum RI, “Hasil penghitungan perolehan suara dari setiap provinsi dan luar negeri dalam pemilu presiden dan wakil presiden tahun 2014,” accessed: 01-01-2024.</p>
+<p>Nasution, C. N., &amp; Widyaningsih, Y. (2022). Klasifikasi Pemilih dalam Pemilu 2019 di Indonesia Menggunakan Regresi Logistik Multinomial dan Chi-Square Automatic Decision Tree (CHAID). Jurnal Statistika Dan Aplikasinya, 6(2). DOI:10.21009/JSA.06201</p>
+<p>Rahayu, V. D. (2023). ANALISIS FAKTOR-FAKTOR YANG MEMPENGARUHI INDEKS PENDIDIKAN DI PROVINSI JAWA TENGAH TAHUN 2015-2021 (Studi Kasus pada BPS (Badan Pusat Statistik) dan NPD (Neraca Pendidikan Daerah) Provinsi Jawa Tengah Tahun 2015-2021). http://repositori.unsil.ac.id/id/eprint/10555</p>
+<p>Sh, Sumono. “Pemilihan Presiden dan Wakil Presiden Berdasarkan Sistem Presidensil.” Seminar Nasional “Perlindungan Hukum Terhadap Tenaga Kesehatan dan Pasien dalam Perspektif UU No.36 Tahun 2014”, Surakarta, Indonesia, April 2017. Universitas Islam Batik Surakarta, 2017.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
