@@ -1,5 +1,5 @@
 ---
-title: "Analisis Pengaruh Indeks Pendidikan Terhadap Hasil Persentase Suara Sah Pemilihan Presiden 2014"
+title: "Analisis Pengaruh Indeks Pendidikan Terhadap Hasil Persentase Suara Sah Pemilihan Presiden tahun 2014"
 subtitle: "Metode Penelitian Politeknik APP Jakarta"
 author: "Yusril Naufal Irfani"
 date: 2024-01-21
