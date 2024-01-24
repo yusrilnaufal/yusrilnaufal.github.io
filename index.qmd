@@ -119,7 +119,7 @@ library('carData')
 
 ## Studi pustaka
 
-1.  Pemilihan Presiden dan Demokrasi di Indonesia
+**1.  Pemilihan Presiden dan Demokrasi di Indonesia**
 
 Pemilihan Presiden dan Wakil Presiden merupakan perwujudan demokrasi
 dalam sistem presidensiil. Pemilihan presiden merupakan bagian integral
@@ -133,7 +133,7 @@ Presiden dan Wakil Presiden, sedang Pasal 18 (4) Undang-Undang Dasar
 Negara Republik Indonesia 1945 mengatur Pemilu Kepala Daerah dan Wakil
 Kepala Daerah secara bertingkat dari Gubernur hingga Bupati/Walikota.
 
-2.  Indeks Pendidikan
+**2.  Indeks Pendidikan**
 
 Indeks pendidikan merupakan salah satu komponen pengukur pendidikan.
 Indeks pendidikan adalah cerminan dari hasil pembangunan dibidang
@@ -144,7 +144,7 @@ dimensi pengetahuan sebagai salah satu variabel pembangunan manusia.
 Indeks pendidikan ini merupakan penggabungan dua indikator pendidikan
 yaitu angka harapan lama sekolah dan rata-rata lama sekolah (BPS, 2021).
 
-3.  Pengaruh Pendidikan terhadap Partisipasi Politik
+**3.  Pengaruh Pendidikan terhadap Partisipasi Politik**
 
 Beberapa penelitian telah menunjukkan bahwa pendidikan memiliki pengaruh
 signifikan terhadap partisipasi politik. Individu yang memiliki tingkat
@@ -169,7 +169,7 @@ merupakan data persentase perolehan suara sah pilpres 2014 tiap calon
 dan indeks pendidikan tahun 2014.
 
 | Provinsi             | Paslon 01 (Prabowo-Hatta) | Paslon 02 (Jokowi-JK) | Total |
-|:---------------------|:-------------------------:|:---------------------:|:-----:|
+|:----------------|:--------------------:|:----------------:|:--------------:|
 | ACEH                 |           54,39           |         45,61         |  100  |
 | SUMATERA UTARA       |           44,76           |         55,24         |  100  |
 | SUMATERA BARAT       |           76,92           |         23,08         |  100  |
@@ -310,6 +310,7 @@ abline(h=0,col="orange",
 ```
 
 #### Paslon 02 (Jokowi-Jusuf Kalla)
+
 ```{r}
 library('readxl')
 dat<-read_excel("C:/Users/yusri/Documents/UAS Metopel/data uas.xlsx")
@@ -343,8 +344,8 @@ Indeks Pendidikan.
 
 Untuk menemukan hubungan antara Indeks Pendidikan dan Persentase Suara
 Sah Calon Presiden, saya menggunakan OLS dengan menggunakan dua model
-regresi untuk tiap calon presiden. Sehingga didapat hasil yang sama, yakni seperti tabel
-berikut:
+regresi untuk tiap calon presiden. Sehingga didapat hasil yang sama,
+yakni seperti tabel berikut:
 
 ### Hasil Regresi
 
@@ -363,12 +364,12 @@ berikut:
 
 Hasil Regresi tersebut dimasukkan ke dalam rumus persamaan sehingga: $$
 y_{t}= 5.2626 + 0.6590 X + \mu_t
-$$ Dari persamaan yang dihasilkan, kita bisa
-menyimpulkan bahwa Indeks Pendidikan sangat berpengaruh terhadap
-Persentase suara Prabowo-Hatta. Hal ini dapat dinilai lagi dari variabel
-x nya yang positif. Dari persamaan tersebut kita juga dapat menyimpulkan
-bahwa Tiap indeks pendidikan naik 1 poin, Maka Perolehan
-suara Prabowo-Hatta akan naik 0.6590.
+$$ Dari persamaan yang dihasilkan, kita bisa menyimpulkan bahwa Indeks
+Pendidikan sangat berpengaruh terhadap Persentase suara Prabowo-Hatta.
+Hal ini dapat dinilai lagi dari variabel x nya yang positif. Dari
+persamaan tersebut kita juga dapat menyimpulkan bahwa Tiap indeks
+pendidikan naik 1 poin, Maka Perolehan suara Prabowo-Hatta akan naik
+0.6590.
 
 #### Paslon 02 (Jokowi-Jusuf Kalla)
 
@@ -388,8 +389,8 @@ y_{t}= 94.7374 + (-0.6590 X) + \mu_t
 $$ Dari persamaan tersebut, kita bisa menyimpulkan bahwa Indeks
 Pendidikan juga sangat berpengaruh terhadap Persentase suara
 Jokowi-Jusuf Kalla. Dari persamaan tersebut kita dapat menyimpulkan
-bahwa Tiap indeks pendidikan naik 1 poin, Maka Perolehan
-suara Jokowi-Jusuf Kalla akan turun sebesar 0.6590.
+bahwa Tiap indeks pendidikan naik 1 poin, Maka Perolehan suara
+Jokowi-Jusuf Kalla akan turun sebesar 0.6590.
 
 ### Analisis masalah
 
@@ -451,25 +452,66 @@ plot(model)
 ## Kesimpulan
 
 ### Paslon 01 (Prabowo-Hatta)
+
 1.  Dengan menggunakan metode kedua, Tiap indeks pendidikan naik 1 poin,
     Maka Persentase Perolehan suara Prabowo-Hatta akan naik 65.9%.
-2. Koefisien Regresi: Koefisien regresi untuk variabel Edu adalah 0.6590. Ini berarti bahwa untuk setiap peningkatan satu unit dalam Indeks Pendidikan, kita dapat mengharapkan peningkatan sebesar 0.6590 unit dalam persentase suara pilpres calon Prabowo-Hatta, asumsi variabel lain tetap.
-3. Signifikansi Statistik: Nilai p untuk variabel Edu adalah 0.134, yang lebih besar dari ambang batas umum 0.05. Ini menunjukkan bahwa Indeks Pendidikan tidak memiliki pengaruh yang signifikan terhadap persentase suara pilpres calon Prabowo-Hatta pada tingkat kepercayaan 95%.
-4. R-squared: Nilai R-squared adalah 0.07084, yang berarti bahwa model ini menjelaskan sekitar 7.1% variasi dalam persentase suara pilpres calon Prabowo-Hatta. Nilai ini cukup rendah, menunjukkan bahwa model ini mungkin tidak menjelaskan variasi dalam persentase suara pilpres calon Prabowo-Hatta dengan baik.
-5. Residuals: Residuals adalah perbedaan antara nilai yang diamati dan nilai yang diprediksi oleh model. Dalam hal ini, residuals berkisar antara -17.648 dan 29.227, menunjukkan bahwa model ini memiliki beberapa kesalahan prediksi yang cukup besar.
+2.  Koefisien Regresi: Koefisien regresi untuk variabel Edu adalah
+    0.6590. Ini berarti bahwa untuk setiap peningkatan satu unit dalam
+    Indeks Pendidikan, kita dapat mengharapkan peningkatan sebesar
+    0.6590 unit dalam persentase suara pilpres calon Prabowo-Hatta,
+    asumsi variabel lain tetap.
+3.  Signifikansi Statistik: Nilai p untuk variabel Edu adalah 0.134,
+    yang lebih besar dari ambang batas umum 0.05. Ini menunjukkan bahwa
+    Indeks Pendidikan tidak memiliki pengaruh yang signifikan terhadap
+    persentase suara pilpres calon Prabowo-Hatta pada tingkat
+    kepercayaan 95%.
+4.  R-squared: Nilai R-squared adalah 0.07084, yang berarti bahwa model
+    ini menjelaskan sekitar 7.1% variasi dalam persentase suara pilpres
+    calon Prabowo-Hatta. Nilai ini cukup rendah, menunjukkan bahwa model
+    ini mungkin tidak menjelaskan variasi dalam persentase suara pilpres
+    calon Prabowo-Hatta dengan baik.
+5.  Residuals: Residuals adalah perbedaan antara nilai yang diamati dan
+    nilai yang diprediksi oleh model. Dalam hal ini, residuals berkisar
+    antara -17.648 dan 29.227, menunjukkan bahwa model ini memiliki
+    beberapa kesalahan prediksi yang cukup besar.
 
-Secara keseluruhan, hasil ini menunjukkan bahwa, berdasarkan data yang digunakan dalam analisis ini, Indeks Pendidikan tampaknya tidak memiliki pengaruh yang signifikan terhadap persentase suara pilpres calon Prabowo-Hatta. Namun, perlu diingat bahwa ini adalah hasil dari satu analisis dan mungkin perlu penelitian lebih lanjut untuk konfirmasi.
+Secara keseluruhan, hasil ini menunjukkan bahwa, berdasarkan data yang
+digunakan dalam analisis ini, Indeks Pendidikan tampaknya tidak memiliki
+pengaruh yang signifikan terhadap persentase suara pilpres calon
+Prabowo-Hatta. Namun, perlu diingat bahwa ini adalah hasil dari satu
+analisis dan mungkin perlu penelitian lebih lanjut untuk konfirmasi.
 
 ### Paslon 02 (Jokowi-JK)
+
 1.  Dengan menggunakan metode kedua, Tiap indeks pendidikan naik 1 poin,
     Maka Persentase Perolehan suara Jokowi-Jusuf Kalla akan turun
     sebesar 65.9%.
-2. Koefisien Regresi: Koefisien regresi untuk variabel Edu adalah -0.6590. Ini berarti bahwa untuk setiap peningkatan satu unit dalam Indeks Pendidikan, kita dapat mengharapkan penurunan sebesar 0.6590 unit dalam persentase suara pilpres calon Jokowi-Jusuf Kalla, asumsi variabel lain tetap.
-3. Signifikansi Statistik: Nilai p untuk variabel Edu adalah 0.134, yang lebih besar dari ambang batas umum 0.05. Ini menunjukkan bahwa Indeks Pendidikan tidak memiliki pengaruh yang signifikan terhadap persentase suara pilpres calon Jokowi-Jusuf Kalla pada tingkat kepercayaan 95%.
-4. R-squared: Nilai R-squared adalah 0.07084, yang berarti bahwa model ini menjelaskan sekitar 7.1% variasi dalam persentase suara pilpres calon Jokowi-Jusuf Kalla. Nilai ini cukup rendah, menunjukkan bahwa model ini mungkin tidak menjelaskan variasi dalam persentase suara pilpres calon Jokowi-Jusuf Kalla dengan baik
-5. Residuals: Residuals adalah perbedaan antara nilai yang diamati dan nilai yang diprediksi oleh model. Dalam hal ini, residuals berkisar antara -29.227 dan 17.648, menunjukkan bahwa model ini memiliki beberapa kesalahan prediksi yang cukup besar.
+2.  Koefisien Regresi: Koefisien regresi untuk variabel Edu adalah
+    -0.6590. Ini berarti bahwa untuk setiap peningkatan satu unit dalam
+    Indeks Pendidikan, kita dapat mengharapkan penurunan sebesar 0.6590
+    unit dalam persentase suara pilpres calon Jokowi-Jusuf Kalla, asumsi
+    variabel lain tetap.
+3.  Signifikansi Statistik: Nilai p untuk variabel Edu adalah 0.134,
+    yang lebih besar dari ambang batas umum 0.05. Ini menunjukkan bahwa
+    Indeks Pendidikan tidak memiliki pengaruh yang signifikan terhadap
+    persentase suara pilpres calon Jokowi-Jusuf Kalla pada tingkat
+    kepercayaan 95%.
+4.  R-squared: Nilai R-squared adalah 0.07084, yang berarti bahwa model
+    ini menjelaskan sekitar 7.1% variasi dalam persentase suara pilpres
+    calon Jokowi-Jusuf Kalla. Nilai ini cukup rendah, menunjukkan bahwa
+    model ini mungkin tidak menjelaskan variasi dalam persentase suara
+    pilpres calon Jokowi-Jusuf Kalla dengan baik
+5.  Residuals: Residuals adalah perbedaan antara nilai yang diamati dan
+    nilai yang diprediksi oleh model. Dalam hal ini, residuals berkisar
+    antara -29.227 dan 17.648, menunjukkan bahwa model ini memiliki
+    beberapa kesalahan prediksi yang cukup besar.
 
-Secara keseluruhan, hasil ini menunjukkan bahwa, berdasarkan data yang digunakan dalam analisis ini, Indeks Pendidikan tampaknya tidak memiliki pengaruh yang signifikan terhadap persentase suara pilpres calon Jokowi-Jusuf Kalla. Namun, perlu diingat bahwa ini adalah hasil dari satu analisis dan mungkin perlu penelitian lebih lanjut untuk konfirmasi.
+Secara keseluruhan, hasil ini menunjukkan bahwa, berdasarkan data yang
+digunakan dalam analisis ini, Indeks Pendidikan tampaknya tidak memiliki
+pengaruh yang signifikan terhadap persentase suara pilpres calon
+Jokowi-Jusuf Kalla. Namun, perlu diingat bahwa ini adalah hasil dari
+satu analisis dan mungkin perlu penelitian lebih lanjut untuk
+konfirmasi.
 
 ### Kesimpulan Akhir
 
