@@ -221,10 +221,10 @@ window.Quarto = {
 <table class="table-bordered table">
 <caption>Hasil Perolehan Suara Sah Pilpres 2014 (dalam persen)</caption>
 <colgroup>
-<col style="width: 23%">
-<col style="width: 28%">
-<col style="width: 26%">
-<col style="width: 21%">
+<col style="width: 27%">
+<col style="width: 34%">
+<col style="width: 29%">
+<col style="width: 8%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -611,11 +611,12 @@ window.Quarto = {
 <section id="paslon-01-prabowo-hatta" class="level4" data-number="3.3.1">
 <h4 data-number="3.3.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta"><span class="header-section-number">3.3.1</span> Paslon 01 (Prabowo-Hatta)</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>dat, <span class="fu">aes</span>(<span class="at">x =</span> Edu, <span class="at">y =</span> PrbwHt)) <span class="sc">+</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">"orange"</span>,<span class="at">size=</span><span class="dv">4</span>) <span class="sc">+</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Indeks Pendidikan"</span>, <span class="at">y =</span> <span class="st">"Persentase Suara Prabowo-Hatta"</span>, </span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Hubungan antara Indeks Pendidikan dan Persentase Suara Pilpres 2014 (Prabowo-Hatta)"</span>) <span class="sc">+</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#scatter plor dengan ggplot2</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>dat, <span class="fu">aes</span>(<span class="at">x =</span> Edu, <span class="at">y =</span> PrbwHt)) <span class="sc">+</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">"orange"</span>,<span class="at">size=</span><span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Indeks Pendidikan"</span>, <span class="at">y =</span> <span class="st">"Persentase Suara Prabowo-Hatta"</span>, </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Hubungan antara Indeks Pendidikan dan Persentase Suara Pilpres 2014 (Prabowo-Hatta)"</span>) <span class="sc">+</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-mpg" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -633,11 +634,12 @@ Figure&nbsp;1: Hubungan antara Indeks Pendidikan dan Persentase Suara Pasangan 0
 <section id="paslon-02-jokowi-jusuf-kalla" class="level4" data-number="3.3.2">
 <h4 data-number="3.3.2" class="anchored" data-anchor-id="paslon-02-jokowi-jusuf-kalla"><span class="header-section-number">3.3.2</span> Paslon 02 (Jokowi-Jusuf Kalla)</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>dat, <span class="fu">aes</span>(<span class="at">x =</span> Edu, <span class="at">y =</span> JkwJk)) <span class="sc">+</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">"red"</span>,<span class="at">size=</span><span class="dv">4</span>) <span class="sc">+</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Indeks Pendidikan"</span>, <span class="at">y =</span> <span class="st">"Persentase Suara Jokowi-JK"</span>, </span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Hubungan antara Indeks Pendidikan dan Persentase Suara Pilpres 2014 (Jokowi-JK)"</span>) <span class="sc">+</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#scatter plor dengan ggplot2</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>dat, <span class="fu">aes</span>(<span class="at">x =</span> Edu, <span class="at">y =</span> JkwJk)) <span class="sc">+</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">"red"</span>,<span class="at">size=</span><span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Indeks Pendidikan"</span>, <span class="at">y =</span> <span class="st">"Persentase Suara Jokowi-JK"</span>, </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Hubungan antara Indeks Pendidikan dan Persentase Suara Pilpres 2014 (Jokowi-JK)"</span>) <span class="sc">+</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-mpg2" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -657,20 +659,42 @@ Figure&nbsp;2: Hubungan antara Indeks Pendidikan dan Persentase Suara Pasangan 0
 <h3 data-number="3.4" class="anchored" data-anchor-id="plot-error"><span class="header-section-number">3.4</span> Plot error</h3>
 <section id="paslon-01-prabowo-hatta-1" class="level4" data-number="3.4.1">
 <h4 data-number="3.4.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta-1"><span class="header-section-number">3.4.1</span> Paslon 01 (Prabowo-Hatta)</h4>
-<div class="quarto-figure quarto-figure-center">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(PrbwHt<span class="sc">~</span>Edu,<span class="at">data=</span>dat)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Membuat Error</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>dat<span class="sc">$</span>u<span class="ot">&lt;-</span><span class="fu">resid</span>(reg1)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dat<span class="sc">$</span>PrbwHt,dat<span class="sc">$</span>u,<span class="at">xlab=</span><span class="st">"Tingkat Pendidikan"</span>,<span class="at">ylab=</span><span class="st">"Persentase Suara Prabowo-Hatta"</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>,<span class="at">col=</span><span class="st">"orange"</span>,</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">lty=</span><span class="st">"dashed"</span>,</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">lwd=</span><span class="st">"3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
 <figure class="figure">
-<p><img src="Rplot%20error%2001.png" class="img-fluid figure-img"></p>
-<figcaption>Plot Error Prabowo-Hatta</figcaption>
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
+</div>
+</div>
 </div>
 </section>
 <section id="paslon-02-jokowi-jusuf-kalla-1" class="level4" data-number="3.4.2">
 <h4 data-number="3.4.2" class="anchored" data-anchor-id="paslon-02-jokowi-jusuf-kalla-1"><span class="header-section-number">3.4.2</span> Paslon 02 (Jokowi-Jusuf Kalla)</h4>
-<div class="quarto-figure quarto-figure-center">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(JkwJk<span class="sc">~</span>Edu,<span class="at">data=</span>dat)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Membuat Error</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>dat<span class="sc">$</span>u<span class="ot">&lt;-</span><span class="fu">resid</span>(reg1)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot Error</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dat<span class="sc">$</span>JkwJk,dat<span class="sc">$</span>u,<span class="at">xlab=</span><span class="st">"Tingkat Pendidikan"</span>,<span class="at">ylab=</span><span class="st">"Persentase Suara Jokowi-JK"</span>)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>,</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">col=</span><span class="st">"red"</span>,</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">lty=</span><span class="st">"dashed"</span>,</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">lwd=</span><span class="st">"3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
 <figure class="figure">
-<p><img src="Rplot%20error%2002.png" class="img-fluid figure-img"></p>
-<figcaption>Plot Error Jokowi-Jusuf Kalla</figcaption>
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
+</div>
+</div>
 </div>
 </section>
 </section>
@@ -686,139 +710,12 @@ y_{t}=\beta_0 + \beta_1 x_t+\mu_t
 <h2 data-number="4" class="anchored" data-anchor-id="pembahasan"><span class="header-section-number">4</span> Pembahasan</h2>
 <section id="pembahasan-masalah" class="level3" data-number="4.1">
 <h3 data-number="4.1" class="anchored" data-anchor-id="pembahasan-masalah"><span class="header-section-number">4.1</span> Pembahasan masalah</h3>
-<p>Untuk menemukan hubungan antara Indeks Pendidikan dan Persentase Suara Sah Calon Presiden, saya menggunakan OLS dengan menggunakan dua model regresi untuk tiap calon presiden. Sehingga didapat hasil seperti tabel berikut:</p>
+<p>Untuk menemukan hubungan antara Indeks Pendidikan dan Persentase Suara Sah Calon Presiden, saya menggunakan OLS dengan menggunakan dua model regresi untuk tiap calon presiden. Sehingga didapat hasil yang sama, yakni seperti tabel berikut:</p>
 </section>
-<section id="metode-pertama" class="level3" data-number="4.2">
-<h3 data-number="4.2" class="anchored" data-anchor-id="metode-pertama"><span class="header-section-number">4.2</span> Metode Pertama</h3>
+<section id="hasil-regresi" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="hasil-regresi"><span class="header-section-number">4.2</span> Hasil Regresi</h3>
 <section id="paslon-01-prabowo-hatta-2" class="level4" data-number="4.2.1">
 <h4 data-number="4.2.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta-2"><span class="header-section-number">4.2.1</span> Paslon 01 (Prabowo-Hatta)</h4>
-<table class="table-bordered table">
-<caption>Regresi Paslon 01 (Prabowo-Hatta)</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Variable</th>
-<th style="text-align: center;">Coefficient</th>
-<th style="text-align: center;">Std. error</th>
-<th style="text-align: center;">t-value</th>
-<th style="text-align: center;">Prob(.)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Intercept</td>
-<td style="text-align: center;">56.11338</td>
-<td style="text-align: center;">3.28567</td>
-<td style="text-align: center;">17.078</td>
-<td style="text-align: center;">&lt;2e-16</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">X</td>
-<td style="text-align: center;">0.10748</td>
-<td style="text-align: center;">0.06992</td>
-<td style="text-align: center;">1.537</td>
-<td style="text-align: center;">0.134</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">R Squared</td>
-<td style="text-align: center;">0.07084</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Adjusted R Squared</td>
-<td style="text-align: center;">0.04086</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">F Statistic</td>
-<td style="text-align: center;">2.363</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Prob (F-Statistic)</td>
-<td style="text-align: center;">0.1344</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-<p>Hasil Regresi tersebut dimasukkan ke dalam rumus persamaan sehingga: <span class="math display">\[
-y_{t}=56.11338 + 0.10748 X + \mu_t
-\]</span> Dari persamaan tersebut, kita bisa menyimpulkan bahwa Indeks Pendidikan sangat berpengaruh terhadap Persentase suara Prabowo-Hatta. Hal ini dapat dinilai dari variabel x nya yang positif. Dari persamaan tersebut kita juga dapat menyimpulkan bahwa Tiap indeks pendidikan naik 1 poin, Maka Perolehan suara Prabowo-Hatta akan naik 0.10748.</p>
-</section>
-<section id="paslon-02-jokowi-jusuf-kalla-2" class="level4" data-number="4.2.2">
-<h4 data-number="4.2.2" class="anchored" data-anchor-id="paslon-02-jokowi-jusuf-kalla-2"><span class="header-section-number">4.2.2</span> Paslon 02 (Jokowi-Jusuf Kalla)</h4>
-<table class="table-bordered table">
-<caption>Regresi Paslon 02 (Jokowi-Jusuf Kalla)</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Variable</th>
-<th style="text-align: center;">Coefficient</th>
-<th style="text-align: center;">Std. error</th>
-<th style="text-align: center;">t-value</th>
-<th style="text-align: center;">Prob(.)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Intercept</td>
-<td style="text-align: center;">66.86186</td>
-<td style="text-align: center;">3.90270</td>
-<td style="text-align: center;">17.132</td>
-<td style="text-align: center;">&lt;2e-16</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">X</td>
-<td style="text-align: center;">-0.10748</td>
-<td style="text-align: center;">0.06992</td>
-<td style="text-align: center;">-1.537</td>
-<td style="text-align: center;">0.134</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">R Squared</td>
-<td style="text-align: center;">0.07084</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Adjusted R Squared</td>
-<td style="text-align: center;">0.04086</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">F Statistic</td>
-<td style="text-align: center;">2.363</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Prob (F-Statistic)</td>
-<td style="text-align: center;">0.1344</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-<p>Hasil Regresi tersebut dimasukkan ke dalam rumus persamaan sehingga: <span class="math display">\[
-y_{t}= 66.86186 + (-0.10748 X) + \mu_t
-\]</span> Dari persamaan tersebut, kita bisa menyimpulkan bahwa Indeks Pendidikan juga sangat berpengaruh terhadap Persentase suara Jokowi-Jusuf Kalla. Dari persamaan tersebut kita dapat menyimpulkan bahwa Tiap indeks pendidikan naik 1 poin, Perolehan suara Jokowi-Jusuf Kalla akan turun sebesar 0.10748.</p>
-</section>
-</section>
-<section id="metode-kedua-package-car" class="level3" data-number="4.3">
-<h3 data-number="4.3" class="anchored" data-anchor-id="metode-kedua-package-car"><span class="header-section-number">4.3</span> Metode Kedua ‘package (car)’</h3>
-<section id="paslon-01-prabowo-hatta-3" class="level4" data-number="4.3.1">
-<h4 data-number="4.3.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta-3"><span class="header-section-number">4.3.1</span> Paslon 01 (Prabowo-Hatta)</h4>
 <table class="table-bordered table">
 <caption>Regresi Paslon 01 (Prabowo-Hatta)</caption>
 <thead>
@@ -877,10 +774,10 @@ y_{t}= 66.86186 + (-0.10748 X) + \mu_t
 </table>
 <p>Hasil Regresi tersebut dimasukkan ke dalam rumus persamaan sehingga: <span class="math display">\[
 y_{t}= 5.2626 + 0.6590 X + \mu_t
-\]</span> Dari persamaan yang dihasilkan dengan metode kedua, kita bisa menyimpulkan bahwa Indeks Pendidikan sangat berpengaruh terhadap Persentase suara Prabowo-Hatta. Hal ini dapat dinilai lagi dari variabel x nya yang positif. Dari persamaan tersebut kita juga dapat menyimpulkan bahwa Tiap indeks pendidikan naik 1 poin, Maka Perolehan suara Prabowo-Hatta akan naik 0.6590.</p>
+\]</span> Dari persamaan yang dihasilkan, kita bisa menyimpulkan bahwa Indeks Pendidikan sangat berpengaruh terhadap Persentase suara Prabowo-Hatta. Hal ini dapat dinilai lagi dari variabel x nya yang positif. Dari persamaan tersebut kita juga dapat menyimpulkan bahwa Tiap indeks pendidikan naik 1 poin, Maka Perolehan suara Prabowo-Hatta akan naik 0.6590.</p>
 </section>
-<section id="paslon-02-jokowi-jusuf-kalla-3" class="level4" data-number="4.3.2">
-<h4 data-number="4.3.2" class="anchored" data-anchor-id="paslon-02-jokowi-jusuf-kalla-3"><span class="header-section-number">4.3.2</span> Paslon 02 (Jokowi-Jusuf Kalla)</h4>
+<section id="paslon-02-jokowi-jusuf-kalla-2" class="level4" data-number="4.2.2">
+<h4 data-number="4.2.2" class="anchored" data-anchor-id="paslon-02-jokowi-jusuf-kalla-2"><span class="header-section-number">4.2.2</span> Paslon 02 (Jokowi-Jusuf Kalla)</h4>
 <table class="table-bordered table">
 <caption>Regresi Paslon 02 (Jokowi-Jusuf Kalla)</caption>
 <thead>
@@ -942,81 +839,17 @@ y_{t}= 94.7374 + (-0.6590 X) + \mu_t
 \]</span> Dari persamaan tersebut, kita bisa menyimpulkan bahwa Indeks Pendidikan juga sangat berpengaruh terhadap Persentase suara Jokowi-Jusuf Kalla. Dari persamaan tersebut kita dapat menyimpulkan bahwa Tiap indeks pendidikan naik 1 poin, Maka Perolehan suara Jokowi-Jusuf Kalla akan turun sebesar 0.6590.</p>
 </section>
 </section>
-<section id="analisis-masalah" class="level3" data-number="4.4">
-<h3 data-number="4.4" class="anchored" data-anchor-id="analisis-masalah"><span class="header-section-number">4.4</span> Analisis masalah</h3>
-<section id="regresi-model-pertama" class="level4" data-number="4.4.1">
-<h4 data-number="4.4.1" class="anchored" data-anchor-id="regresi-model-pertama"><span class="header-section-number">4.4.1</span> <em>Regresi Model Pertama</em></h4>
-<section id="paslon-01-prabowo-hatta-4" class="level5" data-number="4.4.1.1">
-<h5 data-number="4.4.1.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta-4"><span class="header-section-number">4.4.1.1</span> Paslon 01 (Prabowo-Hatta)</h5>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Pemodelan Regresi</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(Edu<span class="sc">~</span>PrbwHt,<span class="at">data=</span>dat)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Interpretasi Model</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Call:
-lm(formula = Edu ~ PrbwHt, data = dat)
-
-Residuals:
-    Min      1Q  Median      3Q     Max 
--12.773  -3.057  -0.637   2.771   9.837 
-
-Coefficients:
-            Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept) 56.11338    3.28567  17.078   &lt;2e-16 ***
-PrbwHt       0.10748    0.06992   1.537    0.134    
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-Residual standard error: 4.777 on 31 degrees of freedom
-Multiple R-squared:  0.07084,   Adjusted R-squared:  0.04086 
-F-statistic: 2.363 on 1 and 31 DF,  p-value: 0.1344</code></pre>
-</div>
-</div>
-</section>
-<section id="paslon-02-jokowi-jusuf-kalla-4" class="level5" data-number="4.4.1.2">
-<h5 data-number="4.4.1.2" class="anchored" data-anchor-id="paslon-02-jokowi-jusuf-kalla-4"><span class="header-section-number">4.4.1.2</span> Paslon 02 (Jokowi-Jusuf Kalla)</h5>
+<section id="analisis-masalah" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="analisis-masalah"><span class="header-section-number">4.3</span> Analisis masalah</h3>
+<section id="regresi-model-pertama" class="level4" data-number="4.3.1">
+<h4 data-number="4.3.1" class="anchored" data-anchor-id="regresi-model-pertama"><span class="header-section-number">4.3.1</span> <em>Regresi Model Pertama</em></h4>
+<section id="paslon-01-prabowo-hatta-3" class="level5" data-number="4.3.1.1">
+<h5 data-number="4.3.1.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta-3"><span class="header-section-number">4.3.1.1</span> Paslon 01 (Prabowo-Hatta)</h5>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Pemodelan Regresi</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(Edu<span class="sc">~</span>JkwJk,<span class="at">data=</span>dat)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(PrbwHt<span class="sc">~</span>Edu,<span class="at">data=</span>dat)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Interpretasi Model</span></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Call:
-lm(formula = Edu ~ JkwJk, data = dat)
-
-Residuals:
-    Min      1Q  Median      3Q     Max 
--12.773  -3.057  -0.637   2.771   9.837 
-
-Coefficients:
-            Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept) 66.86186    3.90270  17.132   &lt;2e-16 ***
-JkwJk       -0.10748    0.06992  -1.537    0.134    
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-Residual standard error: 4.777 on 31 degrees of freedom
-Multiple R-squared:  0.07084,   Adjusted R-squared:  0.04086 
-F-statistic: 2.363 on 1 and 31 DF,  p-value: 0.1344</code></pre>
-</div>
-</div>
-</section>
-</section>
-<section id="regresi-model-kedua" class="level4" data-number="4.4.2">
-<h4 data-number="4.4.2" class="anchored" data-anchor-id="regresi-model-kedua"><span class="header-section-number">4.4.2</span> <em>Regresi Model Kedua</em></h4>
-<section id="paslon-01-prabowo-hatta-5" class="level5" data-number="4.4.2.1">
-<h5 data-number="4.4.2.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta-5"><span class="header-section-number">4.4.2.1</span> Paslon 01 (Prabowo-Hatta)</h5>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Regresi model 2</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'car'</span>)</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'carData'</span>)</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Pemodelan Regresi</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(PrbwHt <span class="sc">~</span> Edu, <span class="at">data =</span> dat)</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Interpretasi Model</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -1035,47 +868,15 @@ Residual standard error: 11.83 on 31 degrees of freedom
 Multiple R-squared:  0.07084,   Adjusted R-squared:  0.04086 
 F-statistic: 2.363 on 1 and 31 DF,  p-value: 0.1344</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Visualisasi Data</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-7-2.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-7-3.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-7-4.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
 </div>
 </section>
-<section id="paslon-02-jokowi-jusuf-kalla-5" class="level5" data-number="4.4.2.2">
-<h5 data-number="4.4.2.2" class="anchored" data-anchor-id="paslon-02-jokowi-jusuf-kalla-5"><span class="header-section-number">4.4.2.2</span> Paslon 02 (Jokowi-Jusuf Kalla)</h5>
+<section id="paslon-02-jokowi-jusuf-kalla-3" class="level5" data-number="4.3.1.2">
+<h5 data-number="4.3.1.2" class="anchored" data-anchor-id="paslon-02-jokowi-jusuf-kalla-3"><span class="header-section-number">4.3.1.2</span> Paslon 02 (Jokowi-Jusuf Kalla)</h5>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'car'</span>)</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'carData'</span>)</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Pemodelan Regresi</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(JkwJk <span class="sc">~</span> Edu, <span class="at">data =</span> dat)</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Interpretasi Model</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Pemodelan Regresi</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(JkwJk<span class="sc">~</span>Edu,<span class="at">data=</span>dat)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Interpretasi Model</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -1096,33 +897,127 @@ Residual standard error: 11.83 on 31 degrees of freedom
 Multiple R-squared:  0.07084,   Adjusted R-squared:  0.04086 
 F-statistic: 2.363 on 1 and 31 DF,  p-value: 0.1344</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Visualisasi Data</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="regresi-model-kedua" class="level4" data-number="4.3.2">
+<h4 data-number="4.3.2" class="anchored" data-anchor-id="regresi-model-kedua"><span class="header-section-number">4.3.2</span> <em>Regresi Model Kedua</em></h4>
+<section id="paslon-01-prabowo-hatta-4" class="level5" data-number="4.3.2.1">
+<h5 data-number="4.3.2.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta-4"><span class="header-section-number">4.3.2.1</span> Paslon 01 (Prabowo-Hatta)</h5>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Regresi model 2</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'car'</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'carData'</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Pemodelan Regresi</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(PrbwHt <span class="sc">~</span> Edu, <span class="at">data =</span> dat)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Interpretasi Model</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = PrbwHt ~ Edu, data = dat)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-17.648  -8.975  -1.181   5.236  29.227 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)
+(Intercept)   5.2626    26.2311   0.201    0.842
+Edu           0.6590     0.4287   1.537    0.134
+
+Residual standard error: 11.83 on 31 degrees of freedom
+Multiple R-squared:  0.07084,   Adjusted R-squared:  0.04086 
+F-statistic: 2.363 on 1 and 31 DF,  p-value: 0.1344</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Visualisasi Data</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-8-2.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-9-2.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-8-3.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-9-3.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-8-4.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-9-4.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="paslon-02-jokowi-jusuf-kalla-4" class="level5" data-number="4.3.2.2">
+<h5 data-number="4.3.2.2" class="anchored" data-anchor-id="paslon-02-jokowi-jusuf-kalla-4"><span class="header-section-number">4.3.2.2</span> Paslon 02 (Jokowi-Jusuf Kalla)</h5>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'car'</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'carData'</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Pemodelan Regresi</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(JkwJk <span class="sc">~</span> Edu, <span class="at">data =</span> dat)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Interpretasi Model</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = JkwJk ~ Edu, data = dat)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-29.227  -5.236   1.181   8.975  17.648 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)   
+(Intercept)  94.7374    26.2311   3.612  0.00106 **
+Edu          -0.6590     0.4287  -1.537  0.13436   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 11.83 on 31 degrees of freedom
+Multiple R-squared:  0.07084,   Adjusted R-squared:  0.04086 
+F-statistic: 2.363 on 1 and 31 DF,  p-value: 0.1344</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Visualisasi Data</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-10-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-10-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-10-4.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1133,19 +1028,27 @@ F-statistic: 2.363 on 1 and 31 DF,  p-value: 0.1344</code></pre>
 </section>
 <section id="kesimpulan" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="kesimpulan"><span class="header-section-number">5</span> Kesimpulan</h2>
-<section id="paslon-01-prabowo-hatta-6" class="level3" data-number="5.1">
-<h3 data-number="5.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta-6"><span class="header-section-number">5.1</span> Paslon 01 (Prabowo-Hatta)</h3>
+<section id="paslon-01-prabowo-hatta-5" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="paslon-01-prabowo-hatta-5"><span class="header-section-number">5.1</span> Paslon 01 (Prabowo-Hatta)</h3>
 <ol type="1">
-<li><p>Dengan menggunakan metode pertama, Tiap indeks pendidikan naik 1 poin, Maka Persentase Perolehan suara Prabowo-Hatta akan naik 10.748%.</p></li>
-<li><p>Dengan menggunakan metode kedua, Tiap indeks pendidikan naik 1 poin, Maka Persentase Perolehan suara Prabowo-Hatta akan naik 65.9%.</p></li>
+<li>Dengan menggunakan metode kedua, Tiap indeks pendidikan naik 1 poin, Maka Persentase Perolehan suara Prabowo-Hatta akan naik 65.9%.</li>
+<li>Koefisien Regresi: Koefisien regresi untuk variabel Edu adalah 0.6590. Ini berarti bahwa untuk setiap peningkatan satu unit dalam Indeks Pendidikan, kita dapat mengharapkan peningkatan sebesar 0.6590 unit dalam persentase suara pilpres calon Prabowo-Hatta, asumsi variabel lain tetap.</li>
+<li>Signifikansi Statistik: Nilai p untuk variabel Edu adalah 0.134, yang lebih besar dari ambang batas umum 0.05. Ini menunjukkan bahwa Indeks Pendidikan tidak memiliki pengaruh yang signifikan terhadap persentase suara pilpres calon Prabowo-Hatta pada tingkat kepercayaan 95%.</li>
+<li>R-squared: Nilai R-squared adalah 0.07084, yang berarti bahwa model ini menjelaskan sekitar 7.1% variasi dalam persentase suara pilpres calon Prabowo-Hatta. Nilai ini cukup rendah, menunjukkan bahwa model ini mungkin tidak menjelaskan variasi dalam persentase suara pilpres calon Prabowo-Hatta dengan baik.</li>
+<li>Residuals: Residuals adalah perbedaan antara nilai yang diamati dan nilai yang diprediksi oleh model. Dalam hal ini, residuals berkisar antara -17.648 dan 29.227, menunjukkan bahwa model ini memiliki beberapa kesalahan prediksi yang cukup besar.</li>
 </ol>
+<p>Secara keseluruhan, hasil ini menunjukkan bahwa, berdasarkan data yang digunakan dalam analisis ini, Indeks Pendidikan tampaknya tidak memiliki pengaruh yang signifikan terhadap persentase suara pilpres calon Prabowo-Hatta. Namun, perlu diingat bahwa ini adalah hasil dari satu analisis dan mungkin perlu penelitian lebih lanjut untuk konfirmasi.</p>
 </section>
 <section id="paslon-02-jokowi-jk" class="level3" data-number="5.2">
 <h3 data-number="5.2" class="anchored" data-anchor-id="paslon-02-jokowi-jk"><span class="header-section-number">5.2</span> Paslon 02 (Jokowi-JK)</h3>
 <ol type="1">
-<li><p>Dengan menggunakan metode pertama, Tiap indeks pendidikan naik 1 poin, Maka Persentase Perolehan suara Jokowi-Jusuf Kalla akan turun sebesar 10.748%.</p></li>
-<li><p>Dengan menggunakan metode kedua, Tiap indeks pendidikan naik 1 poin, Maka Persentase Perolehan suara Jokowi-Jusuf Kalla akan turun sebesar 65.9%.</p></li>
+<li>Dengan menggunakan metode kedua, Tiap indeks pendidikan naik 1 poin, Maka Persentase Perolehan suara Jokowi-Jusuf Kalla akan turun sebesar 65.9%.</li>
+<li>Koefisien Regresi: Koefisien regresi untuk variabel Edu adalah -0.6590. Ini berarti bahwa untuk setiap peningkatan satu unit dalam Indeks Pendidikan, kita dapat mengharapkan penurunan sebesar 0.6590 unit dalam persentase suara pilpres calon Jokowi-Jusuf Kalla, asumsi variabel lain tetap.</li>
+<li>Signifikansi Statistik: Nilai p untuk variabel Edu adalah 0.134, yang lebih besar dari ambang batas umum 0.05. Ini menunjukkan bahwa Indeks Pendidikan tidak memiliki pengaruh yang signifikan terhadap persentase suara pilpres calon Jokowi-Jusuf Kalla pada tingkat kepercayaan 95%.</li>
+<li>R-squared: Nilai R-squared adalah 0.07084, yang berarti bahwa model ini menjelaskan sekitar 7.1% variasi dalam persentase suara pilpres calon Jokowi-Jusuf Kalla. Nilai ini cukup rendah, menunjukkan bahwa model ini mungkin tidak menjelaskan variasi dalam persentase suara pilpres calon Jokowi-Jusuf Kalla dengan baik</li>
+<li>Residuals: Residuals adalah perbedaan antara nilai yang diamati dan nilai yang diprediksi oleh model. Dalam hal ini, residuals berkisar antara -29.227 dan 17.648, menunjukkan bahwa model ini memiliki beberapa kesalahan prediksi yang cukup besar.</li>
 </ol>
+<p>Secara keseluruhan, hasil ini menunjukkan bahwa, berdasarkan data yang digunakan dalam analisis ini, Indeks Pendidikan tampaknya tidak memiliki pengaruh yang signifikan terhadap persentase suara pilpres calon Jokowi-Jusuf Kalla. Namun, perlu diingat bahwa ini adalah hasil dari satu analisis dan mungkin perlu penelitian lebih lanjut untuk konfirmasi.</p>
 </section>
 <section id="kesimpulan-akhir" class="level3" data-number="5.3">
 <h3 data-number="5.3" class="anchored" data-anchor-id="kesimpulan-akhir"><span class="header-section-number">5.3</span> Kesimpulan Akhir</h3>
