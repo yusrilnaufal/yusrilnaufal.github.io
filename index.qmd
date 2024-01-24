@@ -297,6 +297,9 @@ ggplot(data=dat, aes(x = Edu, y = JkwJk)) +
 #### Paslon 01 (Prabowo-Hatta)
 
 ```{r}
+library('readxl')
+dat<-read_excel("C:/Users/yusri/Documents/UAS Metopel/data uas.xlsx")
+
 reg1<-lm(PrbwHt~Edu,data=dat)
 #Membuat Error
 dat$u<-resid(reg1)
@@ -308,6 +311,9 @@ abline(h=0,col="orange",
 
 #### Paslon 02 (Jokowi-Jusuf Kalla)
 ```{r}
+library('readxl')
+dat<-read_excel("C:/Users/yusri/Documents/UAS Metopel/data uas.xlsx")
+
 reg1<-lm(JkwJk~Edu,data=dat)
 #Membuat Error
 dat$u<-resid(reg1)
@@ -415,6 +421,9 @@ summary(reg1)
 #Regresi model 2
 library('car')
 library('carData')
+library('readxl')
+dat<-read_excel("C:/Users/yusri/Documents/UAS Metopel/data uas.xlsx")
+
 #Pemodelan Regresi
 model <- lm(PrbwHt ~ Edu, data = dat)
 #Interpretasi Model
@@ -428,6 +437,9 @@ plot(model)
 ```{r}
 library('car')
 library('carData')
+library('readxl')
+dat<-read_excel("C:/Users/yusri/Documents/UAS Metopel/data uas.xlsx")
+
 #Pemodelan Regresi
 model <- lm(JkwJk ~ Edu, data = dat)
 #Interpretasi Model
