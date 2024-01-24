@@ -455,21 +455,25 @@ plot(model)
 
 1.  Dengan menggunakan metode kedua, Tiap indeks pendidikan naik 1 poin,
     Maka Persentase Perolehan suara Prabowo-Hatta akan naik 65.9%.
+    
 2.  Koefisien Regresi: Koefisien regresi untuk variabel Edu adalah
     0.6590. Ini berarti bahwa untuk setiap peningkatan satu unit dalam
     Indeks Pendidikan, kita dapat mengharapkan peningkatan sebesar
     0.6590 unit dalam persentase suara pilpres calon Prabowo-Hatta,
     asumsi variabel lain tetap.
+    
 3.  Signifikansi Statistik: Nilai p untuk variabel Edu adalah 0.134,
     yang lebih besar dari ambang batas umum 0.05. Ini menunjukkan bahwa
     Indeks Pendidikan tidak memiliki pengaruh yang signifikan terhadap
     persentase suara pilpres calon Prabowo-Hatta pada tingkat
     kepercayaan 95%.
+    
 4.  R-squared: Nilai R-squared adalah 0.07084, yang berarti bahwa model
     ini menjelaskan sekitar 7.1% variasi dalam persentase suara pilpres
     calon Prabowo-Hatta. Nilai ini cukup rendah, menunjukkan bahwa model
     ini mungkin tidak menjelaskan variasi dalam persentase suara pilpres
     calon Prabowo-Hatta dengan baik.
+    
 5.  Residuals: Residuals adalah perbedaan antara nilai yang diamati dan
     nilai yang diprediksi oleh model. Dalam hal ini, residuals berkisar
     antara -17.648 dan 29.227, menunjukkan bahwa model ini memiliki
@@ -486,21 +490,25 @@ analisis dan mungkin perlu penelitian lebih lanjut untuk konfirmasi.
 1.  Dengan menggunakan metode kedua, Tiap indeks pendidikan naik 1 poin,
     Maka Persentase Perolehan suara Jokowi-Jusuf Kalla akan turun
     sebesar 65.9%.
+    
 2.  Koefisien Regresi: Koefisien regresi untuk variabel Edu adalah
     -0.6590. Ini berarti bahwa untuk setiap peningkatan satu unit dalam
     Indeks Pendidikan, kita dapat mengharapkan penurunan sebesar 0.6590
     unit dalam persentase suara pilpres calon Jokowi-Jusuf Kalla, asumsi
     variabel lain tetap.
+    
 3.  Signifikansi Statistik: Nilai p untuk variabel Edu adalah 0.134,
     yang lebih besar dari ambang batas umum 0.05. Ini menunjukkan bahwa
     Indeks Pendidikan tidak memiliki pengaruh yang signifikan terhadap
     persentase suara pilpres calon Jokowi-Jusuf Kalla pada tingkat
     kepercayaan 95%.
+    
 4.  R-squared: Nilai R-squared adalah 0.07084, yang berarti bahwa model
     ini menjelaskan sekitar 7.1% variasi dalam persentase suara pilpres
     calon Jokowi-Jusuf Kalla. Nilai ini cukup rendah, menunjukkan bahwa
     model ini mungkin tidak menjelaskan variasi dalam persentase suara
     pilpres calon Jokowi-Jusuf Kalla dengan baik
+    
 5.  Residuals: Residuals adalah perbedaan antara nilai yang diamati dan
     nilai yang diprediksi oleh model. Dalam hal ini, residuals berkisar
     antara -29.227 dan 17.648, menunjukkan bahwa model ini memiliki
