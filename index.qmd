@@ -385,7 +385,7 @@ yakni seperti tabel berikut:
 | Variable           | Coefficient | Std. error | t-value | Prob(.) |
 |:-------------------|:-----------:|:----------:|:-------:|:-------:|
 | Intercept          |   5.2626    |  26.2311   |  0.201  |  0.842  |
-| X                  |   0.6590    |   0.4287   |  1.537  |  0.134  |
+| X (Indeks Pendidikan)              |   0.6590    |   0.4287   |  1.537  |  0.134  |
 | R Squared          |   0.07084   |            |         |         |
 | Adjusted R Squared |   0.04086   |            |         |         |
 | F Statistic        |    2.363    |            |         |         |
@@ -407,7 +407,7 @@ pendidikan naik 1 poin, Maka Perolehan suara Prabowo-Hatta akan naik
 | Variable           | Coefficient | Std. error | t-value | Prob(.) |
 |:-------------------|:-----------:|:----------:|:-------:|:-------:|
 | Intercept          |   94.7374   |  26.2311   |  3.612  | 0.00106 |
-| X                  |   -0.6590   |   0.4287   | -1.537  | 0.13436 |
+| X (Indeks Pendidikan)                 |   -0.6590   |   0.4287   | -1.537  | 0.13436 |
 | R Squared          |   0.07084   |            |         |         |
 | Adjusted R Squared |   0.04086   |            |         |         |
 | F Statistic        |    2.363    |            |         |         |
