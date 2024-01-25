@@ -202,7 +202,8 @@ window.Quarto = {
 <section id="studi-pustaka" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="studi-pustaka"><span class="header-section-number">2</span> Studi pustaka</h2>
 <p><strong>1. Pemilihan Presiden dan Demokrasi di Indonesia</strong></p>
-<p>Pemilihan Presiden dan Wakil Presiden merupakan perwujudan demokrasi dalam sistem presidensiil. Pemilihan presiden merupakan bagian integral dari sistem demokrasi di Indonesia. Sejak reformasi pada tahun 1998, Indonesia telah mengadakan beberapa pemilihan presiden yang dianggap bebas dan adil. Pemilihan presiden memberikan kesempatan kepada warga negara untuk memilih pemimpin mereka dan berpartisipasi dalam proses demokrasi (sumono, 2014). Berdasarkan Pasal 22 E Undang-Undang Dasar Negara Republik Indonesia 1945 diperkenalkan Pemilu Legislatif, Pemilu Presiden dan Wakil Presiden, sedang Pasal 18 (4) Undang-Undang Dasar Negara Republik Indonesia 1945 mengatur Pemilu Kepala Daerah dan Wakil Kepala Daerah secara bertingkat dari Gubernur hingga Bupati/Walikota.</p>
+<p>Pemilihan Presiden dan Wakil Presiden merupakan perwujudan demokrasi dalam sistem presidensiil. Pemilihan presiden merupakan bagian integral dari sistem demokrasi di Indonesia. Sejak reformasi pada tahun 1998, Indonesia telah mengadakan beberapa pemilihan presiden yang dianggap bebas dan adil. Pemilihan presiden memberikan kesempatan kepada warga negara untuk memilih pemimpin mereka dan berpartisipasi dalam proses demokrasi (sumono, 2014).</p>
+<p>Berdasarkan Pasal 22 E Undang-Undang Dasar Negara Republik Indonesia 1945 diperkenalkan Pemilu Legislatif, Pemilu Presiden dan Wakil Presiden, sedang Pasal 18 (4) Undang-Undang Dasar Negara Republik Indonesia 1945 mengatur Pemilu Kepala Daerah dan Wakil Kepala Daerah secara bertingkat dari Gubernur hingga Bupati/Walikota.</p>
 <p><strong>2. Indeks Pendidikan</strong></p>
 <p>Indeks pendidikan merupakan salah satu komponen pengukur pendidikan. Indeks pendidikan adalah cerminan dari hasil pembangunan dibidang pendidikan yang mempunyai kedudukan strategis, mengingat kualitas Sumber Daya Manusia (SDM) yang tercermin didalamnya sangat menentukan tingkat produktivitas suatu negara. Indeks pendidikan digunakan untuk mengukur dimensi pengetahuan sebagai salah satu variabel pembangunan manusia. Indeks pendidikan ini merupakan penggabungan dua indikator pendidikan yaitu angka harapan lama sekolah dan rata-rata lama sekolah (BPS, 2021).</p>
 <p><strong>3. Pengaruh Pendidikan terhadap Partisipasi Politik</strong></p>
@@ -577,7 +578,7 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<p>Sumber data: Komisi Pemilihan Umum Republik Indonesia dan Badan Pusat Statistik Indonesia</p>
+<p>Sumber data: Komisi Pemilihan Umum Republik Indonesia dan Badan Pusat Statistik Indonesia.</p>
 <p><img src="kpu.png" class="img-fluid quarto-figure quarto-figure-left" style="width:40.0%" alt="Logo KPU."> <img src="bps.png" class="img-fluid quarto-figure quarto-figure-right" style="width:40.0%" alt="Logo BPS."></p>
 </section>
 <section id="import-data" class="level3" data-number="3.2">
@@ -715,8 +716,8 @@ Figure&nbsp;2: Hubungan antara Indeks Pendidikan dan Persentase Suara Pasangan 0
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">"C:/Users/yusri/Documents/UAS Metopel/data uas.xlsx"</span>)</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'ggplot2'</span>)</span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>dat, <span class="fu">aes</span>(Edu)) <span class="sc">+</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> PrbwHt, <span class="at">colour =</span> <span class="st">"orange"</span>)) <span class="sc">+</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> JkwJk, <span class="at">colour =</span> <span class="st">"red"</span>)) <span class="sc">+</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> PrbwHt, <span class="at">colour =</span> <span class="st">"Prabowo-Hatta"</span>)) <span class="sc">+</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> JkwJk, <span class="at">colour =</span> <span class="st">"Jokowi-Jk"</span>)) <span class="sc">+</span></span>
 <span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">colour =</span> <span class="st">"Variabel"</span>)<span class="sc">+</span></span>
 <span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -733,7 +734,8 @@ Figure&nbsp;2: Hubungan antara Indeks Pendidikan dan Persentase Suara Pasangan 0
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">"C:/Users/yusri/Documents/UAS Metopel/data uas.xlsx"</span>)</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'lattice'</span>)</span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Membuat plot untuk Y1 dan Y2 terhadap X</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">xyplot</span>(PrbwHt <span class="sc">+</span> JkwJk <span class="sc">~</span> Edu, <span class="at">data =</span> dat, <span class="at">type =</span> <span class="st">"p"</span>,<span class="at">col=</span><span class="fu">c</span>(<span class="st">"orange"</span>, <span class="st">"red"</span>), <span class="at">auto.key =</span> <span class="fu">list</span>(<span class="at">points =</span> <span class="cn">FALSE</span>, <span class="at">lines =</span> <span class="cn">TRUE</span>, <span class="at">space =</span> <span class="st">"right"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">xyplot</span>(PrbwHt <span class="sc">+</span> JkwJk <span class="sc">~</span> Edu, <span class="at">data =</span> dat, <span class="at">type =</span> <span class="st">"p"</span>,<span class="at">col=</span><span class="fu">c</span>(<span class="st">"orange"</span>, <span class="st">"red"</span>), </span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">auto.key =</span> <span class="fu">list</span>(<span class="at">text =</span> <span class="fu">c</span>(<span class="st">"PrbwHt"</span>, <span class="st">"JkwJk"</span>), <span class="at">points =</span> <span class="cn">FALSE</span>, <span class="at">space =</span> <span class="st">"right"</span>, <span class="at">columns =</span> <span class="dv">1</span>, <span class="at">col =</span> <span class="fu">c</span>(<span class="st">"orange"</span>, <span class="st">"red"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">

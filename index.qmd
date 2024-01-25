@@ -14,6 +14,8 @@ editor:
 
 ![](poltekapp.jpg){fig-align="center" width="50%"}
 
+<div style="text-align: justify"> 
+
 ## Pendahuluan
 
 ### Latar belakang
@@ -51,7 +53,7 @@ Umum Republik Indonesia. Penelitian ini berfokus pada analisis pengaruh
 indeks pendidikan terhadap hasil pemilihan presiden Indonesia tahun
 2014. Ruang lingkup penelitian ini mencakup data persentase suara sah
 hasil pemilihan pilpres di seluruh provinsi dalam pemilihan presiden
-tahun 2014.Variabel yang penulis gunakan adalah Hasil persentase pilpres
+tahun 2014. Variabel yang penulis gunakan adalah Hasil persentase pilpres
 2014 tiap calon dan indeks pendidikan tiap provinsi tahun 2014. Variabel
 dependen dalam penelitian ini adalah persentase suara yang diperoleh
 oleh masing-masing calon presiden. Variabel independen adalah indeks
@@ -85,12 +87,15 @@ Adapun manfaat penelitian ini adalah:
     -   Bagi penulis: Penulis harap penelitian ini dapat menjadi
         referensi bagi orang yang ingin mengetahui tentang pengaruh
         pendidikan terhadap politik.
+        
     -   Bagi pemerintah: Hasil penelitian ini dapat digunakan sebagai
         bahan pertimbangan dalam merumuskan kebijakan pendidikan dan
         kebijakan politik.
+        
     -   Bagi partai politik dan calon presiden: Hasil penelitian ini
         dapat digunakan sebagai bahan evaluasi dan strategi dalam
         merumuskan kampanye politik di masa mendatang.
+        
     -   Bagi masyarakat umum: Hasil penelitian ini dapat meningkatkan
         pemahaman masyarakat tentang pentingnya pendidikan dalam proses
         demokrasi.
@@ -124,7 +129,9 @@ dari sistem demokrasi di Indonesia. Sejak reformasi pada tahun 1998,
 Indonesia telah mengadakan beberapa pemilihan presiden yang dianggap
 bebas dan adil. Pemilihan presiden memberikan kesempatan kepada warga
 negara untuk memilih pemimpin mereka dan berpartisipasi dalam proses
-demokrasi (sumono, 2014). Berdasarkan Pasal 22 E Undang-Undang Dasar
+demokrasi (sumono, 2014). 
+
+Berdasarkan Pasal 22 E Undang-Undang Dasar
 Negara Republik Indonesia 1945 diperkenalkan Pemilu Legislatif, Pemilu
 Presiden dan Wakil Presiden, sedang Pasal 18 (4) Undang-Undang Dasar
 Negara Republik Indonesia 1945 mengatur Pemilu Kepala Daerah dan Wakil
@@ -243,7 +250,7 @@ dan indeks pendidikan tahun 2014.
 {tbl-colwidths="\[60,40\]".bordered}
 
 Sumber data: Komisi Pemilihan Umum Republik Indonesia dan Badan Pusat
-Statistik Indonesia
+Statistik Indonesia.
 
 ![Logo KPU](kpu.png){fig-alt="Logo KPU." fig-align="left" width="40%"}
 ![Logo BPS](bps.png){fig-alt="Logo BPS." fig-align="right" width="40%"}
@@ -333,8 +340,8 @@ library('readxl')
 dat<-read_excel("C:/Users/yusri/Documents/UAS Metopel/data uas.xlsx")
 library('ggplot2')
 ggplot(data=dat, aes(Edu)) +
-  geom_line(aes(y = PrbwHt, colour = "orange")) +
-  geom_line(aes(y = JkwJk, colour = "red")) +
+  geom_line(aes(y = PrbwHt, colour = "Prabowo-Hatta")) +
+  geom_line(aes(y = JkwJk, colour = "Jokowi-Jk")) +
   labs(colour = "Variabel")+
 theme_minimal()
 ```
@@ -345,7 +352,8 @@ library('readxl')
 dat<-read_excel("C:/Users/yusri/Documents/UAS Metopel/data uas.xlsx")
 library('lattice')
 # Membuat plot untuk Y1 dan Y2 terhadap X
-xyplot(PrbwHt + JkwJk ~ Edu, data = dat, type = "p",col=c("orange", "red"), auto.key = list(points = FALSE, lines = TRUE, space = "right"))
+xyplot(PrbwHt + JkwJk ~ Edu, data = dat, type = "p",col=c("orange", "red"), 
+       auto.key = list(text = c("PrbwHt", "JkwJk"), points = FALSE, space = "right", columns = 1, col = c("orange", "red")))
 ```
 
 ### Metode analisis
@@ -587,3 +595,5 @@ Sh, Sumono. "Pemilihan Presiden dan Wakil Presiden Berdasarkan Sistem
 Presidensil." Seminar Nasional "Perlindungan Hukum Terhadap Tenaga
 Kesehatan dan Pasien dalam Perspektif UU No.36 Tahun 2014", Surakarta,
 Indonesia, April 2017. Universitas Islam Batik Surakarta, 2017.
+
+</div> 
