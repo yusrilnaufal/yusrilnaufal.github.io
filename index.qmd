@@ -354,6 +354,7 @@ library('lattice')
 # Membuat plot untuk Y1 dan Y2 terhadap X
 xyplot(PrbwHt + JkwJk ~ Edu, data = dat, type = "p",col=c("orange", "red"), 
        auto.key = list(text = c("PrbwHt", "JkwJk"), points = FALSE, space = "right", columns = 1, col = c("orange", "red")))
+
 ```
 
 ### Metode analisis
