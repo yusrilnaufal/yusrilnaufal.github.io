@@ -375,7 +375,7 @@ Indeks Pendidikan.
 
 Untuk menemukan hubungan antara Indeks Pendidikan dan Persentase Suara
 Sah Calon Presiden, saya menggunakan OLS dengan menggunakan dua model
-regresi untuk tiap calon presiden. Sehingga didapat hasil yang sama,
+regresi untuk tiap calon presiden sehingga didapat hasil yang sama,
 yakni seperti tabel berikut:
 
 ### Hasil Regresi
